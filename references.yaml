@@ -1,0 +1,836 @@
+references:
+- id: albarghouthi2013
+  type: chapter
+  title: Recursive Program Synthesis
+  author:
+  - family: Albarghouthi
+    given: Aws
+  - family: Gulwani
+    given: Sumit
+  - family: Kincaid
+    given: Zachary
+  container-title: 'Computer Aided Verification: 25th International Conference, CAV 2013'
+  page: 934-950
+  publisher: Springer
+  DOI: 10.1007/978-3-642-39799-8_67
+  issued:
+    date-parts:
+    - - 2013
+  collection-title: Lecture Notes in Computer Science
+  volume: '8044'
+  editor:
+  - family: Sharygina
+    given: Natasha
+  - family: Veith
+    given: Helmut
+  publisher-place: Berlin
+- id: baxter2000
+  type: article-journal
+  title: A Model of Inductive Bias Learning
+  author:
+  - family: Baxter
+    given: Jonathan
+  container-title: Journal of Artificial Intelligence Research
+  volume: '12'
+  page: 149-198
+  DOI: 10.1613/jair.731
+  issued:
+    date-parts:
+    - - 2000
+- id: berlot2026
+  type: paper-conference
+  title: Is This LLM Library Learning? Evaluation Must Account For Compute and Behaviour
+  author:
+  - family: Berlot-Attwell
+    given: Ian
+  - family: Sesterhenn
+    given: Tobias
+  - family: Rudzicz
+    given: Frank
+  - family: Si
+    given: Xujie
+  container-title: 'Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics
+    (Volume 1: Long Papers)'
+  page: 3534-3568
+  publisher: Association for Computational Linguistics
+  DOI: 10.18653/v1/2026.eacl-long.163
+  issued:
+    date-parts:
+    - - 2026
+- id: boden1998
+  type: article-journal
+  title: Creativity and artificial intelligence
+  author:
+  - family: Boden
+    given: Margaret A.
+  container-title: Artificial Intelligence
+  volume: '103'
+  issue: 1-2
+  page: 347-356
+  DOI: 10.1016/s0004-3702(98)00055-1
+  issued:
+    date-parts:
+    - - 1998
+- id: botea2005
+  type: article-journal
+  title: 'Macro-FF: Improving AI Planning with Automatically Learned Macro-Operators'
+  author:
+  - family: Botea
+    given: Adi
+  - family: Enzenberger
+    given: Markus
+  - family: Müller
+    given: Martin
+  - family: Schaeffer
+    given: Jonathan
+  container-title: Journal of Artificial Intelligence Research
+  volume: '24'
+  page: 581-621
+  DOI: 10.1613/jair.1696
+  issued:
+    date-parts:
+    - - 2005
+- id: bowers2023
+  type: article-journal
+  title: Top-Down Synthesis for Library Learning
+  author:
+  - family: Bowers
+    given: Matthew
+  - family: Olausson
+    given: Theo X.
+  - family: Wong
+    given: Lionel
+  - family: Grand
+    given: Gabriel
+  - family: Tenenbaum
+    given: Joshua B.
+  - family: Ellis
+    given: Kevin
+  - family: Solar-Lezama
+    given: Armando
+  container-title: Proceedings of the ACM on Programming Languages
+  volume: '7'
+  issue: POPL
+  page: 1182-1213
+  DOI: 10.1145/3571234
+  issued:
+    date-parts:
+    - - 2023
+- id: cao2023
+  type: article-journal
+  title: '<span class="nocase">babble</span>: Learning Better Abstractions with E-Graphs and Anti-unification'
+  author:
+  - family: Cao
+    given: David
+  - family: Kunkel
+    given: Rose
+  - family: Nandi
+    given: Chandrakana
+  - family: Willsey
+    given: Max
+  - family: Tatlock
+    given: Zachary
+  - family: Polikarpova
+    given: Nadia
+  container-title: Proceedings of the ACM on Programming Languages
+  volume: '7'
+  issue: POPL
+  page: 396-424
+  DOI: 10.1145/3571207
+  issued:
+    date-parts:
+    - - 2023
+- id: carnap1950
+  type: book
+  title: Logical Foundations of Probability
+  author:
+  - family: Carnap
+    given: Rudolf
+  publisher: University of Chicago Press
+  publisher-place: Chicago
+  issued:
+    date-parts:
+    - - 1950
+- id: cropper2020
+  type: article-journal
+  title: Forgetting to Learn Logic Programs
+  author:
+  - family: Cropper
+    given: Andrew
+  container-title: Proceedings of the AAAI Conference on Artificial Intelligence
+  volume: '34'
+  issue: '04'
+  page: 3676-3683
+  DOI: 10.1609/aaai.v34i04.5776
+  issued:
+    date-parts:
+    - - 2020
+- id: dechter2013
+  type: paper-conference
+  title: Bootstrap learning via modular concept discovery
+  author:
+  - family: Dechter
+    given: Eyal
+  - family: Malmaud
+    given: Jon
+  - family: Adams
+    given: Ryan P.
+  - family: Tenenbaum
+    given: Joshua B.
+  container-title: Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence (IJCAI 2013)
+  page: 1302-1309
+  publisher: AAAI Press
+  issued:
+    date-parts:
+    - - 2013
+- id: ellis2021
+  type: paper-conference
+  title: 'DreamCoder: bootstrapping inductive program synthesis with wake-sleep library learning'
+  author:
+  - family: Ellis
+    given: Kevin
+  - family: Wong
+    given: Catherine
+  - family: Nye
+    given: Maxwell
+  - family: Sablé-Meyer
+    given: Mathias
+  - family: Morales
+    given: Lucas
+  - family: Hewitt
+    given: Luke
+  - family: Cary
+    given: Luc
+  - family: Solar-Lezama
+    given: Armando
+  - family: Tenenbaum
+    given: Joshua B.
+  container-title: Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation
+    (PLDI 2021)
+  page: 835-850
+  publisher: ACM
+  DOI: 10.1145/3453483.3454080
+  issued:
+    date-parts:
+    - - 2021
+- id: ellis2023
+  type: article-journal
+  title: 'DreamCoder: growing generalizable, interpretable knowledge with wake–sleep Bayesian program learning'
+  author:
+  - family: Ellis
+    given: Kevin
+  - family: Wong
+    given: Lionel
+  - family: Nye
+    given: Maxwell
+  - family: Sablé-Meyer
+    given: Mathias
+  - family: Cary
+    given: Luc
+  - family: Anaya Pozo
+    given: Lore
+  - family: Hewitt
+    given: Luke
+  - family: Solar-Lezama
+    given: Armando
+  - family: Tenenbaum
+    given: Joshua B.
+  container-title: 'Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+  volume: '381'
+  issue: '2251'
+  DOI: 10.1098/rsta.2022.0050
+  issued:
+    date-parts:
+    - - 2023
+  page: '20220050'
+- id: espiritosanto2024
+  type: article
+  title: 'Towards a formal creativity theory: preliminary results in novelty and transformativeness'
+  author:
+  - family: Espírito Santo
+    given: Luís
+  - family: Wiggins
+    given: Geraint
+  - family: Cardoso
+    given: Amílcar
+  container-title: arXiv
+  number: '2405.02148'
+  URL: https://arxiv.org/abs/2405.02148
+  issued:
+    date-parts:
+    - - 2024
+- id: feng2026
+  type: article
+  title: 'Learning from revision consequences: hindsight meta-experience distillation for self-improving agents'
+  author:
+  - family: Feng
+    given: Qianhan
+  - family: Huang
+    given: Zhongzhen
+  - family: Zhu
+    given: Yakun
+  - family: Zhang
+    given: Xiaofan
+  - family: Dou
+    given: Qi
+  container-title: arXiv
+  number: '2610.07979'
+  URL: https://arxiv.org/abs/2610.07979
+  issued:
+    date-parts:
+    - - 2026
+- id: fikes1972
+  type: article-journal
+  title: Learning and executing generalized robot plans
+  author:
+  - family: Fikes
+    given: Richard E.
+  - family: Hart
+    given: Peter E.
+  - family: Nilsson
+    given: Nils J.
+  container-title: Artificial Intelligence
+  volume: '3'
+  page: 251-288
+  DOI: 10.1016/0004-3702(72)90051-3
+  issued:
+    date-parts:
+    - - 1972
+- id: gulwani2017
+  type: article-journal
+  title: Program Synthesis
+  author:
+  - family: Gulwani
+    given: Sumit
+  - family: Polozov
+    given: Oleksandr
+  - family: Singh
+    given: Rishabh
+  container-title: Foundations and Trends in Programming Languages
+  volume: '4'
+  issue: 1-2
+  page: 1-119
+  DOI: 10.1561/2500000010
+  issued:
+    date-parts:
+    - - 2017
+- id: hernandezcano2026
+  type: article
+  title: Prospective compression in human abstraction learning
+  author:
+  - family: Hernandez Cano
+    given: Leonardo
+  - family: Zareski
+    given: Ivan
+  - family: El Amouri
+    given: Luisa
+  - family: Zhao
+    given: Pinzhe
+  - family: Mascini
+    given: Max
+  - family: Sansone
+    given: Emanuele
+  - family: Pu
+    given: Yewen
+  - family: Zhao
+    given: Bonan
+  - family: Kryven
+    given: Marta
+  container-title: arXiv
+  number: '2605.09985'
+  URL: https://arxiv.org/abs/2605.09985
+  issued:
+    date-parts:
+    - - 2026
+- id: iba1989
+  type: article-journal
+  title: A heuristic approach to the discovery of macro-operators
+  author:
+  - family: Iba
+    given: Glenn A.
+  container-title: Machine Learning
+  volume: '3'
+  issue: '4'
+  page: 285-317
+  DOI: 10.1007/bf00116836
+  issued:
+    date-parts:
+    - - 1989
+- id: jong2008
+  type: paper-conference
+  title: The utility of temporal abstraction in reinforcement learning
+  author:
+  - family: Jong
+    given: Nicholas K.
+  - family: Hester
+    given: Todd
+  - family: Stone
+    given: Peter
+  container-title: Proceedings of the 7th International Joint Conference on Autonomous Agents and Multiagent Systems (AAMAS
+    2008)
+  page: 299-306
+  issued:
+    date-parts:
+    - - 2008
+- id: korf1985
+  type: article-journal
+  title: 'Macro-operators: A weak method for learning'
+  author:
+  - family: Korf
+    given: Richard E.
+  container-title: Artificial Intelligence
+  volume: '26'
+  issue: '1'
+  page: 35-77
+  DOI: 10.1016/0004-3702(85)90012-8
+  issued:
+    date-parts:
+    - - 1985
+- id: kuhn1977
+  type: chapter
+  title: Objectivity, value judgment, and theory choice
+  author:
+  - family: Kuhn
+    given: Thomas S.
+  container-title: 'The Essential Tension: Selected Studies in Scientific Tradition and Change'
+  publisher: University of Chicago Press
+  publisher-place: Chicago
+  page: 320-339
+  issued:
+    date-parts:
+    - - 1977
+- id: laird1986
+  type: article-journal
+  title: 'Chunking in Soar: The anatomy of a general learning mechanism'
+  author:
+  - family: Laird
+    given: John E.
+  - family: Rosenbloom
+    given: Paul S.
+  - family: Newell
+    given: Allen
+  container-title: Machine Learning
+  volume: '1'
+  issue: '1'
+  page: 11-46
+  DOI: 10.1007/bf00116249
+  issued:
+    date-parts:
+    - - 1986
+- id: lakatos1970
+  type: chapter
+  title: Falsification and the Methodology of Scientific Research Programmes
+  author:
+  - family: Lakatos
+    given: Imre
+  container-title: Criticism and the Growth of Knowledge
+  page: 91-196
+  publisher: Cambridge University Press
+  DOI: 10.1017/cbo9781139171434.009
+  issued:
+    date-parts:
+    - - 1970
+  editor:
+  - family: Lakatos
+    given: Imre
+  - family: Musgrave
+    given: Alan
+  publisher-place: Cambridge
+- id: lake2015
+  type: article-journal
+  title: Human-level concept learning through probabilistic program induction
+  author:
+  - family: Lake
+    given: Brenden M.
+  - family: Salakhutdinov
+    given: Ruslan
+  - family: Tenenbaum
+    given: Joshua B.
+  container-title: Science
+  volume: '350'
+  issue: '6266'
+  page: 1332-1338
+  DOI: 10.1126/science.aab3050
+  issued:
+    date-parts:
+    - - 2015
+- id: levin1973
+  type: article-journal
+  title: Universal sequential search problems
+  author:
+  - family: Levin
+    given: Leonid A.
+  container-title: Problems of Information Transmission
+  volume: '9'
+  issue: '3'
+  page: 265-266
+  issued:
+    date-parts:
+    - - 1973
+- id: lieder2020
+  type: article-journal
+  title: 'Resource-rational analysis: Understanding human cognition as the optimal use of limited computational resources'
+  author:
+  - family: Lieder
+    given: Falk
+  - family: Griffiths
+    given: Thomas L.
+  container-title: Behavioral and Brain Sciences
+  volume: '43'
+  DOI: 10.1017/s0140525x1900061x
+  issued:
+    date-parts:
+    - - 2020
+  page: e1
+- id: markovitch1993
+  type: article-journal
+  title: 'Information filtering: Selection mechanisms in learning systems'
+  author:
+  - family: Markovitch
+    given: Shaul
+  - family: Scott
+    given: Paul D.
+  container-title: Machine Learning
+  volume: '10'
+  issue: '2'
+  page: 113-151
+  DOI: 10.1007/bf00993503
+  issued:
+    date-parts:
+    - - 1993
+- id: mcmullin1976
+  type: chapter
+  title: The Fertility of Theory and the Unit for Appraisal in Science
+  author:
+  - family: McMullin
+    given: Ernan
+  container-title: Essays in Memory of Imre Lakatos
+  page: 395-432
+  publisher: D. Reidel
+  DOI: 10.1007/978-94-010-1451-9_25
+  issued:
+    date-parts:
+    - - 1976
+  collection-title: Boston Studies in the Philosophy of Science
+  volume: '39'
+  editor:
+  - family: Cohen
+    given: Robert S.
+  - family: Feyerabend
+    given: Paul K.
+  - family: Wartofsky
+    given: Marx W.
+  publisher-place: Dordrecht
+- id: minton1990
+  type: article-journal
+  title: Quantitative results concerning the utility of explanation-based learning
+  author:
+  - family: Minton
+    given: Steven
+  container-title: Artificial Intelligence
+  volume: '42'
+  issue: 2-3
+  page: 363-391
+  DOI: 10.1016/0004-3702(90)90059-9
+  issued:
+    date-parts:
+    - - 1990
+- id: piantadosi2016
+  type: article-journal
+  title: 'The logical primitives of thought: Empirical foundations for compositional cognitive models'
+  author:
+  - family: Piantadosi
+    given: Steven T.
+  - family: Tenenbaum
+    given: Joshua B.
+  - family: Goodman
+    given: Noah D.
+  container-title: Psychological Review
+  volume: '123'
+  issue: '4'
+  page: 392-424
+  DOI: 10.1037/a0039980
+  issued:
+    date-parts:
+    - - 2016
+- id: rissanen1978
+  type: article-journal
+  title: Modeling by shortest data description
+  author:
+  - family: Rissanen
+    given: Jorma
+  container-title: Automatica
+  volume: '14'
+  issue: '5'
+  page: 465-471
+  DOI: 10.1016/0005-1098(78)90005-5
+  issued:
+    date-parts:
+    - - 1978
+- id: ritchie2006
+  type: article-journal
+  title: The transformational creativity hypothesis
+  author:
+  - family: Ritchie
+    given: Graeme
+  container-title: New Generation Computing
+  volume: '24'
+  issue: '3'
+  page: 241-266
+  DOI: 10.1007/bf03037334
+  issued:
+    date-parts:
+    - - 2006
+- id: schmidhuber2004
+  type: article-journal
+  title: Optimal Ordered Problem Solver
+  author:
+  - family: Schmidhuber
+    given: Jürgen
+  container-title: Machine Learning
+  volume: '54'
+  issue: '3'
+  page: 211-254
+  DOI: 10.1023/b:mach.0000015880.99707.b2
+  issued:
+    date-parts:
+    - - 2004
+- id: schmidhuber2010
+  type: article-journal
+  title: Formal Theory of Creativity, Fun, and Intrinsic Motivation (1990–2010)
+  author:
+  - family: Schmidhuber
+    given: Jürgen
+  container-title: IEEE Transactions on Autonomous Mental Development
+  volume: '2'
+  issue: '3'
+  page: 230-247
+  DOI: 10.1109/tamd.2010.2056368
+  issued:
+    date-parts:
+    - - 2010
+- id: schmidhuber2013
+  type: article-journal
+  title: 'PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable
+    Problem'
+  author:
+  - family: Schmidhuber
+    given: Jürgen
+  container-title: Frontiers in Psychology
+  volume: '4'
+  DOI: 10.3389/fpsyg.2013.00313
+  issued:
+    date-parts:
+    - - 2013
+  page: '313'
+- id: solomonoff1964
+  type: article-journal
+  title: A formal theory of inductive inference. Part I
+  author:
+  - family: Solomonoff
+    given: Ray J.
+  container-title: Information and Control
+  volume: '7'
+  issue: '1'
+  page: 1-22
+  DOI: 10.1016/s0019-9958(64)90223-2
+  issued:
+    date-parts:
+    - - 1964
+- id: solway2014
+  type: article-journal
+  title: Optimal Behavioral Hierarchy
+  author:
+  - family: Solway
+    given: Alec
+  - family: Diuk
+    given: Carlos
+  - family: Córdova
+    given: Natalia
+  - family: Yee
+    given: Debbie
+  - family: Barto
+    given: Andrew G.
+  - family: Niv
+    given: Yael
+  - family: Botvinick
+    given: Matthew M.
+  container-title: PLoS Computational Biology
+  volume: '10'
+  issue: '8'
+  page: e1003779
+  DOI: 10.1371/journal.pcbi.1003779
+  issued:
+    date-parts:
+    - - 2014
+- id: sutton1990
+  type: chapter
+  title: Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming
+  author:
+  - family: Sutton
+    given: Richard S.
+  container-title: 'Machine Learning: Proceedings of the Seventh International Conference'
+  page: 216-224
+  publisher: Morgan Kaufmann
+  DOI: 10.1016/b978-1-55860-141-3.50030-4
+  issued:
+    date-parts:
+    - - 1990
+  editor:
+  - family: Porter
+    given: Bruce W.
+  - family: Mooney
+    given: Raymond J.
+  publisher-place: San Mateo, CA
+- id: sutton1999
+  type: article-journal
+  title: 'Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning'
+  author:
+  - family: Sutton
+    given: Richard S.
+  - family: Precup
+    given: Doina
+  - family: Singh
+    given: Satinder
+  container-title: Artificial Intelligence
+  volume: '112'
+  issue: 1-2
+  page: 181-211
+  DOI: 10.1016/s0004-3702(99)00052-1
+  issued:
+    date-parts:
+    - - 1999
+- id: tambe1990
+  type: article-journal
+  title: The problem of expensive chunks and its solution by restricting expressiveness
+  author:
+  - family: Tambe
+    given: Milind
+  - family: Newell
+    given: Allen
+  - family: Rosenbloom
+    given: Paul S.
+  container-title: Machine Learning
+  volume: '5'
+  issue: '3'
+  page: 299-348
+  DOI: 10.1007/bf00117107
+  issued:
+    date-parts:
+    - - 1990
+- id: tria2014
+  type: article-journal
+  title: The dynamics of correlated novelties
+  author:
+  - family: Tria
+    given: Francesca
+  - family: Loreto
+    given: Vittorio
+  - family: Servedio
+    given: Vito D. P.
+  - family: Strogatz
+    given: Steven H.
+  container-title: Scientific Reports
+  volume: '4'
+  issue: '1'
+  DOI: 10.1038/srep05890
+  issued:
+    date-parts:
+    - - 2014
+  page: '5890'
+- id: udupa2013
+  type: paper-conference
+  title: 'TRANSIT: specifying protocols with concolic snippets'
+  author:
+  - family: Udupa
+    given: Abhishek
+  - family: Raghavan
+    given: Arun
+  - family: Deshmukh
+    given: Jyotirmoy V.
+  - family: Mador-Haim
+    given: Sela
+  - family: Martin
+    given: Milo M.K.
+  - family: Alur
+    given: Rajeev
+  container-title: Proceedings of the 34th ACM SIGPLAN Conference on Programming Language Design and Implementation
+  page: 287-296
+  publisher: ACM
+  DOI: 10.1145/2491956.2462174
+  issued:
+    date-parts:
+    - - 2013
+- id: wang2026
+  type: article
+  title: 'MetaSkill-Evolve: recursive self-improvement of LLM agents via two-timescale meta-skill evolution'
+  author:
+  - family: Wang
+    given: Zefeng
+  - family: Yan
+    given: Minxi
+  - family: Bi
+    given: Jinhe
+  - family: Yan
+    given: Sikuan
+  - family: Tresp
+    given: Volker
+  - family: Ma
+    given: Yunpu
+  container-title: arXiv
+  number: '2607.05297'
+  URL: https://arxiv.org/abs/2607.05297
+  issued:
+    date-parts:
+    - - 2026
+- id: wiggins2006
+  type: article-journal
+  title: A preliminary framework for description, analysis and comparison of creative systems
+  author:
+  - family: Wiggins
+    given: Geraint A.
+  container-title: Knowledge-Based Systems
+  volume: '19'
+  issue: '7'
+  page: 449-458
+  DOI: 10.1016/j.knosys.2006.04.009
+  issued:
+    date-parts:
+    - - 2006
+- id: xu2020
+  type: paper-conference
+  title: A theory of usable information under computational constraints
+  author:
+  - family: Xu
+    given: Yilun
+  - family: Zhao
+    given: Shengjia
+  - family: Song
+    given: Jiaming
+  - family: Stewart
+    given: Russell
+  - family: Ermon
+    given: Stefano
+  container-title: International Conference on Learning Representations (ICLR 2020)
+  URL: https://arxiv.org/abs/2002.10689
+  issued:
+    date-parts:
+    - - 2020
+- id: zhao2024
+  type: article-journal
+  title: A model of conceptual bootstrapping in human cognition
+  author:
+  - family: Zhao
+    given: Bonan
+  - family: Lucas
+    given: Christopher G.
+  - family: Bramley
+    given: Neil R.
+  container-title: Nature Human Behaviour
+  volume: '8'
+  issue: '1'
+  page: 125-136
+  DOI: 10.1038/s41562-023-01719-1
+  issued:
+    date-parts:
+    - - 2024

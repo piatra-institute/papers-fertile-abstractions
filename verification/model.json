@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "model",
+  "started": "2026-10-21T18:06:18.222278+00:00",
+  "finished": "2026-10-21T18:09:23.888182+00:00",
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "run_all.py"
+  ],
+  "cwd": "simulation",
+  "runtime": {
+    "scope": "recorder",
+    "python": "3.13.3 (main, Apr  9 2025, 03:47:57) [Clang 20.1.0 ]",
+    "platform": "macOS-15.1-arm64-arm-64bit-Mach-O"
+  },
+  "execution_result": null,
+  "execution": {
+    "status": "PASS",
+    "exit_code": 0,
+    "detail": "command completed"
+  },
+  "input_scope": "execution-v1",
+  "additional_inputs": [],
+  "inputs": {
+    "simulation/analyses.py": "058f84846fb2ed32635945f6216fc9b73c40506748384f292a6de7678302624d",
+    "simulation/constructions.py": "c0e32b4083230de130ef218fa1e00118026864e72cc3cc0948f13803b91d7efc",
+    "simulation/engine.py": "4cf1f107584043b4e42a420bce150aaa8a354364457cbd26ff0bb4c2af4debb0",
+    "simulation/experiment.py": "116d28e01897df009639137a39a09236e62cfb6eb443303a53e91df11ef5650d",
+    "simulation/figures.py": "4724ac9e442ea9e333367a526f1ef1d2c45d547324d9cfefc5e5e83400218715",
+    "simulation/lists.py": "b359b4325bb2c01c32784bcd2a4707462cf638dcdaafc1393735dd4398852128",
+    "simulation/maze.py": "e0ab63e488d94ec26a0cd3891cc2a807c6242cab060223a855d6a6d709507ce2",
+    "simulation/pyproject.toml": "4906930574d2f1f152bcd58da345f4c6e21684858b07c34cfd6b1e8207decfe2",
+    "simulation/run_all.py": "36593ffe618b9ed881432488476e11be131dc5e854c3c1599df3eceeff05a515",
+    "simulation/stats.py": "b5f5b9a54d8d91eeb103cda3b1e346c32bd3012693eca0d14968cf5ddfddd576",
+    "simulation/uv.lock": "5bcf2c96781c132f8a2d5c791b114b575c48e1318faa9a4d25c7b1850ce0dee3"
+  },
+  "artifacts": {
+    "simulation/output/results.json": "5eb18e2366772417d14b201dbf9a17f876ca209e481bc264d6d9b22e2eaf015d"
+  }
+}

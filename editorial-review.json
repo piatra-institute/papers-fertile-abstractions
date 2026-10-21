@@ -1,0 +1,10 @@
+{
+  "manuscript_sha256": "eab7aa78eaa92fa7bfc90a7426ccb87ed0e1b919f1037941af1c156c0d1fef01",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Full re-read after review corrections on 2026-10-21. Proposition 1(iii) hypothesis corrected (no shortest program for h over the extended library contains the new token, and description length at least 2) and its proof rewritten; the false claim that no same-length program containing the token precedes the old first program was removed. Proposition 3 now states its history and derives the savings 3 and 5 used by the corollary. Argument, structure and voice otherwise unchanged; decisions in editorial.md."
+}

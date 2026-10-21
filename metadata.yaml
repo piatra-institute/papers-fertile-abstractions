@@ -1,0 +1,37 @@
+slug: fertile-abstractions
+web_slug: fertile-abstractions
+title: 'Fertile Abstractions: Measuring How a Learned Idea Changes Later Discovery'
+header: Fertile Abstractions
+created: 2026-10
+date: October 2026
+paper_dir: paper
+has_simulation: true
+claims_target: claims.yaml
+repo: git@github.com:piatra-institute/papers-fertile-abstractions.git
+github: https://github.com/piatra-institute/papers-fertile-abstractions
+status: published
+abstract: A learned abstraction can change what a program-searching learner discovers afterwards. We define
+  its discovery value as the difference in a frozen learner's success on withheld tasks between learning
+  with the abstraction available and learning without it, with the abstraction supplied at the test in
+  both cases. Adding an abstraction defined from existing primitives never changes what can be expressed,
+  only what a bounded search reaches. We prove that discovery value is not determined by compression of
+  past solutions, direct usefulness or the immediate effect on search, and that two abstractions can exchange
+  their order by discovery value when checking candidates becomes more expensive, so no score that ignores
+  the search budget orders abstractions correctly at every cost. In 300 random worlds in each of two domains,
+  list programs and navigation between rooms, discovery value varied more across abstractions than direct
+  value did (standard deviations 0.096 and 0.042 in the share of test tasks solved; 0.053 and 0.037),
+  took both signs, was reliable across independent test families and had the opposite sign to direct value
+  for more than half of the abstractions. Within worlds, compression of past solutions correlated with
+  it at 0.11 and 0.08 and a look-ahead on the learner's own curriculum at 0.22 and 0.08, against reliability
+  ceilings of 0.88 and 0.80. Rankings at verification costs eight times apart agreed at only 0.16 and
+  0.19 after correction for reliability. Fertility here belongs to an abstraction together with a budget
+  and a future, and is mostly invisible when the abstraction is adopted.
+build_resources:
+- simulation/output/figures/accessibility.png
+- simulation/output/figures/values.png
+- simulation/output/figures/predictors.png
+- simulation/output/figures/budget.png
+web_blurb: A learned abstraction can change what a bounded learner discovers next. Separating that discovery
+  value from an abstraction's direct use shows that it is large, two-signed and reliable in simulated
+  program-search worlds, that compression of past solutions barely predicts it, and that rankings by it
+  reverse as verification becomes more expensive.

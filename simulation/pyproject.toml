@@ -1,0 +1,10 @@
+[project]
+name = "fertile-abstractions-sim"
+version = "0.1.0"
+description = "Bounded program search with library learning: discovery value of abstractions under early, late and no access, in two domains"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+]

@@ -1,0 +1,2708 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: eab7aa78eaa92fa7bfc90a7426ccb87ed0e1b919f1037941af1c156c0d1fef01
+claims:
+- id: ab-n
+  kind: computation
+  passage: In 300 random worlds in each of two domains, list programs and navigation between rooms, discovery value
+    varied more across abstractions than direct value did (standard deviations 0.096 and 0.042 in the share of test
+    tasks solved; 0.053 and 0.037), took both signs, was reliable across independent test families and had the opposite
+    sign to direct value for more than half of the abstractions.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/n_worlds
+    reported: '300'
+    units: worlds
+    conditions: worlds per domain
+    decimals: 0
+- id: ab-sd-ld
+  kind: computation
+  passage: In 300 random worlds in each of two domains, list programs and navigation between rooms, discovery value
+    varied more across abstractions than direct value did (standard deviations 0.096 and 0.042 in the share of test
+    tasks solved; 0.053 and 0.037), took both signs, was reliable across independent test families and had the opposite
+    sign to direct value for more than half of the abstractions.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/sd/disc
+    reported: '0.096'
+    units: share of test tasks
+    conditions: sd of discovery value across 2,400 candidates; list domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 3
+- id: ab-sd-lr
+  kind: computation
+  passage: In 300 random worlds in each of two domains, list programs and navigation between rooms, discovery value
+    varied more across abstractions than direct value did (standard deviations 0.096 and 0.042 in the share of test
+    tasks solved; 0.053 and 0.037), took both signs, was reliable across independent test families and had the opposite
+    sign to direct value for more than half of the abstractions.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/sd/direct
+    reported: '0.042'
+    units: share of test tasks
+    conditions: sd of direct value; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 3
+- id: ab-sd-md
+  kind: computation
+  passage: In 300 random worlds in each of two domains, list programs and navigation between rooms, discovery value
+    varied more across abstractions than direct value did (standard deviations 0.096 and 0.042 in the share of test
+    tasks solved; 0.053 and 0.037), took both signs, was reliable across independent test families and had the opposite
+    sign to direct value for more than half of the abstractions.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/sd/disc
+    reported: '0.053'
+    units: share of test tasks
+    conditions: sd of discovery value; navigation domain, 300 worlds, 8 candidates per world, verification cost
+      1 during discovery
+    decimals: 3
+- id: ab-sd-mr
+  kind: computation
+  passage: In 300 random worlds in each of two domains, list programs and navigation between rooms, discovery value
+    varied more across abstractions than direct value did (standard deviations 0.096 and 0.042 in the share of test
+    tasks solved; 0.053 and 0.037), took both signs, was reliable across independent test families and had the opposite
+    sign to direct value for more than half of the abstractions.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/sd/direct
+    reported: '0.037'
+    units: share of test tasks
+    conditions: sd of direct value; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 3
+- id: ab-comp-l
+  kind: computation
+  passage: Within worlds, compression of past solutions correlated with it at 0.11 and 0.08 and a look-ahead on
+    the learner's own curriculum at 0.22 and 0.08, against reliability ceilings of 0.88 and 0.80.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/comp/mean
+    reported: '0.11'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: ab-comp-m
+  kind: computation
+  passage: Within worlds, compression of past solutions correlated with it at 0.11 and 0.08 and a look-ahead on
+    the learner's own curriculum at 0.22 and 0.08, against reliability ceilings of 0.88 and 0.80.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/comp/mean
+    reported: '0.08'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: ab-look-l
+  kind: computation
+  passage: Within worlds, compression of past solutions correlated with it at 0.11 and 0.08 and a look-ahead on
+    the learner's own curriculum at 0.22 and 0.08, against reliability ceilings of 0.88 and 0.80.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/lookahead/mean
+    reported: '0.22'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: ab-look-m
+  kind: computation
+  passage: Within worlds, compression of past solutions correlated with it at 0.11 and 0.08 and a look-ahead on
+    the learner's own curriculum at 0.22 and 0.08, against reliability ceilings of 0.88 and 0.80.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/lookahead/mean
+    reported: '0.08'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: ab-ceil-l
+  kind: computation
+  passage: Within worlds, compression of past solutions correlated with it at 0.11 and 0.08 and a look-ahead on
+    the learner's own curriculum at 0.22 and 0.08, against reliability ceilings of 0.88 and 0.80.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/reliability/ceiling
+    reported: '0.88'
+    units: rank correlation
+    conditions: square root of the Spearman-Brown reliability of discovery value; list domain, 300 worlds, 8 candidates
+      per world, verification cost 1 during discovery
+    decimals: 2
+- id: ab-ceil-m
+  kind: computation
+  passage: Within worlds, compression of past solutions correlated with it at 0.11 and 0.08 and a look-ahead on
+    the learner's own curriculum at 0.22 and 0.08, against reliability ceilings of 0.88 and 0.80.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/reliability/ceiling
+    reported: '0.80'
+    units: rank correlation
+    conditions: square root of the Spearman-Brown reliability; navigation domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 2
+- id: ab-cross-l
+  kind: computation
+  passage: Rankings at verification costs eight times apart agreed at only 0.16 and 0.19 after correction for reliability.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/cross_vs_cost1/8.0/disattenuated
+    reported: '0.16'
+    units: rank correlation
+    conditions: cost 1 versus cost 8, disjoint test halves, divided by geometric mean of within-cost split-half
+      reliabilities; list domain
+    decimals: 2
+- id: ab-cross-m
+  kind: computation
+  passage: Rankings at verification costs eight times apart agreed at only 0.16 and 0.19 after correction for reliability.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/cross_vs_cost1/8.0/disattenuated
+    reported: '0.19'
+    units: rank correlation
+    conditions: as above; navigation domain
+    decimals: 2
+- id: ab-opp
+  kind: interpretation
+  passage: In 300 random worlds in each of two domains, list programs and navigation between rooms, discovery value
+    varied more across abstractions than direct value did (standard deviations 0.096 and 0.042 in the share of test
+    tasks solved; 0.053 and 0.037), took both signs, was reliable across independent test families and had the opposite
+    sign to direct value for more than half of the abstractions.
+  rationale: 'Shares of opposite signs among candidates with both values nonzero: 55.8% and 58.3% (Section 5.2).'
+- id: ab-fert
+  kind: interpretation
+  passage: Fertility here belongs to an abstraction together with a budget and a future, and is mostly invisible
+    when the abstraction is adopted.
+  rationale: Summarizes Propositions 2 and 3 and the budget results of Section 5.5.
+- id: s1-n
+  kind: computation
+  passage: Fourth, we measure discovery value for 2,400 candidate abstractions in 300 randomly generated worlds
+    in each of two domains, list-manipulating programs and navigation between rooms.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/n_candidates
+    reported: 2,400
+    units: candidates
+    conditions: 300 worlds times 8 candidates
+    decimals: 0
+- id: s1-claim
+  kind: interpretation
+  passage: In both, discovery value varies more across abstractions than direct value does, takes both signs, and
+    is reliable across independent test problems; the compression of past solutions predicts it barely or not at
+    all, direct value predicts it with the wrong sign, and the best predictor we tested, a costly look-ahead on
+    the learner's own curriculum, recovers about a third of the attainable benefit in one domain and little in the
+    other.
+  rationale: Choice gain of the look-ahead 0.036 against 0.114 for the best candidate in hindsight (list domain),
+    0.006 against 0.066 in navigation.
+- id: s1-scope
+  kind: assumption
+  passage: The setting is program search with a growing library.
+  rationale: 'Scope restriction: no claim about imagery, experience, people or deployed systems.'
+- id: s-fikes
+  kind: source
+  passage: STRIPS generalized successful plans into macro-operators that could be reused as single steps [@fikes1972].
+  evidence:
+    citation_id: fikes1972
+    locator: Full article
+    verification_note: Crossref record checked (Artificial Intelligence 3:251-288); generalized plans stored for
+      reuse as macro-operators is the paper's subject as stated in its title and standard summaries.
+    verified: true
+- id: s-korf
+  kind: source
+  passage: Korf showed that macro-operators learned for permutation puzzles such as the Eight Puzzle and Rubik's
+    Cube allow solutions to be assembled without search, and treated macro-operator learning as a general weak method
+    [@korf1985].
+  evidence:
+    citation_id: korf1985
+    locator: Full article
+    verification_note: Crossref record checked (Artificial Intelligence 26:35-77); macro tables for the Eight Puzzle
+      and Rubik's Cube that solve problems without search; title states the weak-method framing.
+    verified: true
+- id: s-iba
+  kind: source
+  passage: Iba selected macro-operators from solution traces with heuristics and filtered them by their usefulness
+    [@iba1989], Soar's chunking summarized the results of subgoal processing into new rules [@laird1986], and Macro-FF
+    extracted, ranked and filtered macro-operators from experience in a domain to speed later planning [@botea2005].
+  evidence:
+    citation_id: iba1989
+    locator: Full article
+    verification_note: Crossref record checked (Machine Learning 3:285-317); heuristic discovery and filtering of
+      macro-operators as stated in the title.
+    verified: true
+- id: s-laird
+  kind: source
+  passage: Iba selected macro-operators from solution traces with heuristics and filtered them by their usefulness
+    [@iba1989], Soar's chunking summarized the results of subgoal processing into new rules [@laird1986], and Macro-FF
+    extracted, ranked and filtered macro-operators from experience in a domain to speed later planning [@botea2005].
+  evidence:
+    citation_id: laird1986
+    locator: Full article
+    verification_note: Crossref record checked (Machine Learning 1:11-46); chunking as summarization of subgoal
+      processing.
+    verified: true
+- id: s-botea
+  kind: source
+  passage: Iba selected macro-operators from solution traces with heuristics and filtered them by their usefulness
+    [@iba1989], Soar's chunking summarized the results of subgoal processing into new rules [@laird1986], and Macro-FF
+    extracted, ranked and filtered macro-operators from experience in a domain to speed later planning [@botea2005].
+  evidence:
+    citation_id: botea2005
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): macro-operators generated from domain structure, filtered and ranked,
+      used to speed future searches.'
+    verified: true
+- id: s-sutton99
+  kind: source
+  passage: In reinforcement learning, options extend primitive actions with temporally extended ones [@sutton1999].
+  evidence:
+    citation_id: sutton1999
+    locator: Sections 1-2
+    verification_note: Crossref record checked; options as temporally extended courses of action within MDPs.
+    verified: true
+- id: s-jong
+  kind: source
+  passage: 'Whether options help depends on the problem: Jong, Hester and Stone found that standard ways of adding
+    temporal abstraction help only in limited contexts and traced their benefit to the exploration they induce [@jong2008],
+    and Solway and colleagues gave a Bayesian account of which hierarchies of subtasks are optimal for a set of
+    tasks and found that people tend to discover such hierarchies [@solway2014].'
+  evidence:
+    citation_id: jong2008
+    locator: Abstract
+    verification_note: 'Abstract on the authors'' publication page: temporal abstractions linked to exploration;
+      experiments find they help only in limited contexts.'
+    verified: true
+- id: s-solway
+  kind: source
+  passage: 'Whether options help depends on the problem: Jong, Hester and Stone found that standard ways of adding
+    temporal abstraction help only in limited contexts and traced their benefit to the exploration they induce [@jong2008],
+    and Solway and colleagues gave a Bayesian account of which hierarchies of subtasks are optimal for a set of
+    tasks and found that people tend to discover such hierarchies [@solway2014].'
+  evidence:
+    citation_id: solway2014
+    locator: Abstract
+    verification_note: 'Abstract (OpenAlex): mathematical account of optimal hierarchies; four experiments suggest
+      people discover optimal action hierarchies.'
+    verified: true
+- id: s-minton
+  kind: source
+  passage: 'Minton quantified the utility problem: learned control knowledge slows a problem solver when the cost
+    of matching and using it exceeds what it saves [@minton1990].'
+  evidence:
+    citation_id: minton1990
+    locator: Full article
+    verification_note: Crossref record checked (Artificial Intelligence 42:363-391); quantitative results on whether
+      learned control knowledge pays for its matching cost, the utility problem.
+    verified: true
+- id: s-tambe
+  kind: source
+  passage: Tambe, Newell and Rosenbloom traced slowdowns in Soar to expensive chunks [@tambe1990], and Markovitch
+    and Scott treated the decision of which acquired knowledge to keep as a family of selection mechanisms [@markovitch1993].
+  evidence:
+    citation_id: tambe1990
+    locator: Title and full article
+    verification_note: Crossref record checked (Machine Learning 5:299-348); title states the problem of expensive
+      chunks.
+    verified: true
+- id: s-mark
+  kind: source
+  passage: Tambe, Newell and Rosenbloom traced slowdowns in Soar to expensive chunks [@tambe1990], and Markovitch
+    and Scott treated the decision of which acquired knowledge to keep as a family of selection mechanisms [@markovitch1993].
+  evidence:
+    citation_id: markovitch1993
+    locator: Title and full article
+    verification_note: Crossref record checked (Machine Learning 10:113-151); information filtering as selection
+      mechanisms in learning systems.
+    verified: true
+- id: s-solo
+  kind: source
+  passage: Algorithmic probability weights programs by their length [@solomonoff1964], and Levin's universal search
+    allocates search time to programs according to that weight [@levin1973].
+  evidence:
+    citation_id: solomonoff1964
+    locator: Part I
+    verification_note: Crossref record checked (Information and Control 7:1-22); prior over sequences from programs
+      weighted by length.
+    verified: true
+- id: s-levin
+  kind: source
+  passage: Algorithmic probability weights programs by their length [@solomonoff1964], and Levin's universal search
+    allocates search time to programs according to that weight [@levin1973].
+  evidence:
+    citation_id: levin1973
+    locator: Full text
+    verification_note: Record checked on Math-Net.ru (Problems of Information Transmission 9(3):265-266); universal
+      sequential search.
+    verified: true
+- id: s-oops
+  kind: source
+  passage: The optimal ordered problem solver applies this to a sequence of problems and reuses code from earlier
+    solutions when doing so pays [@schmidhuber2004]; PowerPlay searches for new problems together with modifications
+    of the solver that solve them without losing earlier skills [@schmidhuber2013].
+  evidence:
+    citation_id: schmidhuber2004
+    locator: Abstract
+    verification_note: 'Abstract (Semantic Scholar): OOPS draws on Levin search and spends part of search time on
+      programs that reuse earlier solutions.'
+    verified: true
+- id: s-pp
+  kind: source
+  passage: The optimal ordered problem solver applies this to a sequence of problems and reuses code from earlier
+    solutions when doing so pays [@schmidhuber2004]; PowerPlay searches for new problems together with modifications
+    of the solver that solve them without losing earlier skills [@schmidhuber2013].
+  evidence:
+    citation_id: schmidhuber2013
+    locator: Abstract
+    verification_note: 'Abstract (OpenAlex): searches pairs of new tasks and solver modifications that solve all
+      previous tasks plus the new one.'
+    verified: true
+- id: s-baxter
+  kind: source
+  passage: Baxter's model of inductive bias learning shows how a learner embedded in an environment of related tasks
+    can learn a hypothesis space that serves new tasks from the same environment [@baxter2000].
+  evidence:
+    citation_id: baxter2000
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): learner embedded in an environment of related tasks learns a hypothesis
+      space that generalizes to new tasks.'
+    verified: true
+- id: s-dyna
+  kind: source
+  passage: Dyna-style agents improve a policy with experience simulated from a learned model [@sutton1990]; there
+    too internally generated search improves behaviour, with a fixed vocabulary of actions.
+  evidence:
+    citation_id: sutton1990
+    locator: Full paper
+    verification_note: Crossref record checked (ICML 1990 proceedings 216-224); integrated learning and planning
+      from a learned model.
+    verified: true
+- id: s-ec
+  kind: source
+  passage: The exploration-compression algorithm alternated between searching for programs and compressing the solutions
+    into reusable components [@dechter2013].
+  evidence:
+    citation_id: dechter2013
+    locator: Full paper
+    verification_note: IJCAI 2013 proceedings index checked (pp. 1302-1309); exploration-compression bootstrap learning.
+    verified: true
+- id: s-dc
+  kind: source
+  passage: DreamCoder alternates between solving tasks, refactoring solutions into a growing library of abstractions
+    and training a neural search policy, and its libraries deepen as later abstractions are built from earlier ones
+    [@ellis2021; @ellis2023].
+  evidence:
+    citation_id: ellis2021
+    locator: Abstract
+    verification_note: 'Abstract (OpenAlex): library and neural search policy bootstrap each other; refactoring
+      builds a progressively deepening library.'
+    verified: true
+- id: s-stitch
+  kind: source
+  passage: Stitch synthesizes abstractions by corpus-guided top-down search and evaluates library quality by compressivity
+    [@bowers2023]; babble finds abstractions modulo an equational theory [@cao2023].
+  evidence:
+    citation_id: bowers2023
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): corpus-guided top-down synthesis; library quality measured by compressivity.'
+    verified: true
+- id: s-babble
+  kind: source
+  passage: Stitch synthesizes abstractions by corpus-guided top-down search and evaluates library quality by compressivity
+    [@bowers2023]; babble finds abstractions modulo an equational theory [@cao2023].
+  evidence:
+    citation_id: cao2023
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): library learning modulo theory with e-graphs and anti-unification.'
+    verified: true
+- id: s-cropper
+  kind: source
+  passage: Cropper showed that forgetting learned programs can reduce the hypothesis space and the sample complexity
+    of an inductive logic programming learner [@cropper2020], a direct instance of the branching cost.
+  evidence:
+    citation_id: cropper2020
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): forgetting reduces hypothesis space size and sample complexity of an
+      ILP learner.'
+    verified: true
+- id: s-berlot
+  kind: source
+  passage: Berlot-Attwell and colleagues re-examined three in-context library-learning systems built on large language
+    models and found that their gains often vanished or reversed when baselines received the same computational
+    budget, and found no evidence that one system reused its learned lemmas [@berlot2026].
+  evidence:
+    citation_id: berlot2026
+    locator: Abstract
+    verification_note: 'Abstract (ACL Anthology): gains vanish or reverse once computational cost is accounted for;
+      no evidence of direct reuse of learned lemmas in LEGO-Prover.'
+    verified: true
+- id: s-meta
+  kind: source
+  passage: MetaSkill-Evolve evolves both on two timescales [@wang2026].
+  evidence:
+    citation_id: wang2026
+    locator: Abstract
+    verification_note: 'arXiv abstract read: task skill and meta-skill evolve on fast and slow loops.'
+    verified: true
+- id: s-hmed
+  kind: source
+  passage: Hindsight meta-experience distillation re-executes an incumbent and a revised improvement procedure from
+    the same restored discovery state, so that the effect of a revision on the subsequent search can be observed
+    under a shared condition [@feng2026].
+  evidence:
+    citation_id: feng2026
+    locator: Abstract
+    verification_note: 'arXiv abstract read: re-executes incumbent and revised Meta-Skills from the same restored
+      discovery state.'
+    verified: true
+- id: s-pia
+  kind: source
+  passage: 'Which primitives a learner starts with changes what it learns: Piantadosi, Tenenbaum and Goodman showed
+    that different primitive sets in a compositional language of thought predict different learning curves for rule-based
+    concepts [@piantadosi2016], and program-induction models learn new concepts by reusing parts of old ones [@lake2015].'
+  evidence:
+    citation_id: piantadosi2016
+    locator: Abstract
+    verification_note: 'Abstract (OpenAlex): different LOT primitive sets predict distinct learning curves in rule-based
+      concept learning.'
+    verified: true
+- id: s-lake
+  kind: source
+  passage: 'Which primitives a learner starts with changes what it learns: Piantadosi, Tenenbaum and Goodman showed
+    that different primitive sets in a compositional language of thought predict different learning curves for rule-based
+    concepts [@piantadosi2016], and program-induction models learn new concepts by reusing parts of old ones [@lake2015].'
+  evidence:
+    citation_id: lake2015
+    locator: Abstract
+    verification_note: 'Abstract (Crossref summary): program induction model learns, parses and recreates characters
+      from parts.'
+    verified: true
+- id: s-zhao
+  kind: source
+  passage: Zhao, Lucas and Bramley modelled conceptual bootstrapping with a repertoire that caches and reuses elements
+    of earlier insights; the model predicts different learned concepts when the same evidence arrives in different
+    orders, and four experiments with 570 participants showed the predicted curriculum-order and garden-pathing
+    effects [@zhao2024].
+  evidence:
+    citation_id: zhao2024
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): model caches and reuses elements of earlier insights; different orders
+      give different concepts; four experiments, n = 570, curriculum-order and garden-pathing effects.'
+    verified: true
+- id: s-hc
+  kind: source
+  passage: Hernandez Cano and colleagues argue that existing library-learning algorithms compress past tasks retrospectively,
+    and report that people building geometric patterns choose abstractions in a way consistent with compressing
+    future tasks under a non-stationary task-generating process [@hernandezcano2026].
+  evidence:
+    citation_id: hernandezcano2026
+    locator: Abstract
+    verification_note: 'arXiv abstract read: Pattern Builder Task; behaviour consistent with prospective compression
+      under non-stationary latent curricula.'
+    verified: true
+- id: s-lieder
+  kind: source
+  passage: Resource-rational analysis supplies the general frame in which such choices trade benefits against computational
+    costs [@lieder2020].
+  evidence:
+    citation_id: lieder2020
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): rational use of limited computational resources as a modelling paradigm.'
+    verified: true
+- id: s-boden
+  kind: source
+  passage: Boden distinguished combinational, exploratory and transformational creativity [@boden1998].
+  evidence:
+    citation_id: boden1998
+    locator: Full article
+    verification_note: Crossref record checked (Artificial Intelligence 103:347-356); the three types of creativity
+      are the paper's organizing distinction.
+    verified: true
+- id: s-wiggins
+  kind: source
+  passage: Wiggins formalized creative systems as search in a conceptual space governed by rules for traversal and
+    evaluation [@wiggins2006], Ritchie examined whether transforming a conceptual space can be made precise [@ritchie2006],
+    and Espírito Santo, Wiggins and Cardoso use formal learning theory to argue that novelty is in general neither
+    necessary nor sufficient for transformational creativity [@espiritosanto2024].
+  evidence:
+    citation_id: wiggins2006
+    locator: Full article
+    verification_note: Crossref record checked (Knowledge-Based Systems 19:449-458); creative systems framework
+      with conceptual space, traversal and evaluation.
+    verified: true
+- id: s-ritchie
+  kind: source
+  passage: Wiggins formalized creative systems as search in a conceptual space governed by rules for traversal and
+    evaluation [@wiggins2006], Ritchie examined whether transforming a conceptual space can be made precise [@ritchie2006],
+    and Espírito Santo, Wiggins and Cardoso use formal learning theory to argue that novelty is in general neither
+    necessary nor sufficient for transformational creativity [@espiritosanto2024].
+  evidence:
+    citation_id: ritchie2006
+    locator: Full article
+    verification_note: Crossref record checked (New Generation Computing 24:241-266); critical examination of the
+      transformational creativity hypothesis.
+    verified: true
+- id: s-esp
+  kind: source
+  passage: Wiggins formalized creative systems as search in a conceptual space governed by rules for traversal and
+    evaluation [@wiggins2006], Ritchie examined whether transforming a conceptual space can be made precise [@ritchie2006],
+    and Espírito Santo, Wiggins and Cardoso use formal learning theory to argue that novelty is in general neither
+    necessary nor sufficient for transformational creativity [@espiritosanto2024].
+  evidence:
+    citation_id: espiritosanto2024
+    locator: Abstract
+    verification_note: 'arXiv abstract read: novelty neither necessary nor sufficient for transformational creativity
+      in general.'
+    verified: true
+- id: s-sch10
+  kind: source
+  passage: Schmidhuber's theory of creativity rewards an agent for improvements in its own ability to predict or
+    compress [@schmidhuber2010].
+  evidence:
+    citation_id: schmidhuber2010
+    locator: Abstract
+    verification_note: 'Abstract (OpenAlex): intrinsic reward for discovering patterns that improve prediction or
+      compression.'
+    verified: true
+- id: s-tria
+  kind: source
+  passage: Tria and colleagues modelled correlated novelties, in which each novelty opens the space for further
+    ones [@tria2014].
+  evidence:
+    citation_id: tria2014
+    locator: Abstract
+    verification_note: 'Abstract (Crossref): one novelty paves the way for others; urn model of the expanding adjacent
+      possible.'
+    verified: true
+- id: s-xu
+  kind: source
+  passage: Xu and colleagues defined usable information relative to a computationally bounded observer; unlike Shannon
+    information, it can be created by computation [@xu2020].
+  evidence:
+    citation_id: xu2020
+    locator: Abstract
+    verification_note: 'arXiv abstract read: V-information can be created through computation, violating the data
+      processing inequality.'
+    verified: true
+- id: s-carnap
+  kind: source
+  passage: Carnap required that an explication be fruitful, useful for formulating many universal statements [@carnap1950];
+    Kuhn listed fruitfulness with accuracy, consistency, scope and simplicity as shared criteria of theory choice
+    [@kuhn1977]; Lakatos judged research programmes by whether they keep predicting novel facts [@lakatos1970];
+    and McMullin examined fertility, a theory's capacity to be developed fruitfully, and argued that it makes the
+    theory as developed over time the proper unit of appraisal [@mcmullin1976].
+  evidence:
+    citation_id: carnap1950
+    locator: Chapter I, section 3
+    verification_note: Identity checked (Open Library); requirements for an explicatum in Chapter I, section 3,
+      include fruitfulness for formulating universal statements.
+    verified: true
+- id: s-kuhn
+  kind: source
+  passage: Carnap required that an explication be fruitful, useful for formulating many universal statements [@carnap1950];
+    Kuhn listed fruitfulness with accuracy, consistency, scope and simplicity as shared criteria of theory choice
+    [@kuhn1977]; Lakatos judged research programmes by whether they keep predicting novel facts [@lakatos1970];
+    and McMullin examined fertility, a theory's capacity to be developed fruitfully, and argued that it makes the
+    theory as developed over time the proper unit of appraisal [@mcmullin1976].
+  evidence:
+    citation_id: kuhn1977
+    locator: pp. 321-322
+    verification_note: Identity checked (Open Library); the five characteristics of a good theory are listed at
+      the start of the essay.
+    verified: true
+- id: s-lakatos
+  kind: source
+  passage: Carnap required that an explication be fruitful, useful for formulating many universal statements [@carnap1950];
+    Kuhn listed fruitfulness with accuracy, consistency, scope and simplicity as shared criteria of theory choice
+    [@kuhn1977]; Lakatos judged research programmes by whether they keep predicting novel facts [@lakatos1970];
+    and McMullin examined fertility, a theory's capacity to be developed fruitfully, and argued that it makes the
+    theory as developed over time the proper unit of appraisal [@mcmullin1976].
+  evidence:
+    citation_id: lakatos1970
+    locator: Sections 3(a)-(c)
+    verification_note: Crossref record checked (pp. 91-196); progressive and degenerating problem shifts defined
+      by prediction of novel facts.
+    verified: true
+- id: s-mcm
+  kind: source
+  passage: Carnap required that an explication be fruitful, useful for formulating many universal statements [@carnap1950];
+    Kuhn listed fruitfulness with accuracy, consistency, scope and simplicity as shared criteria of theory choice
+    [@kuhn1977]; Lakatos judged research programmes by whether they keep predicting novel facts [@lakatos1970];
+    and McMullin examined fertility, a theory's capacity to be developed fruitfully, and argued that it makes the
+    theory as developed over time the proper unit of appraisal [@mcmullin1976].
+  evidence:
+    citation_id: mcmullin1976
+    locator: Full chapter
+    verification_note: Crossref record checked (Boston Studies 39, pp. 395-432); fertility of theory and the unit
+      for appraisal.
+    verified: true
+- id: d-search
+  kind: definition
+  passage: 'The search procedure enumerates programs in length-lexicographic order: all programs of length 1, then
+    all of length 2, and so on, ordered within a length by the token order.'
+  rationale: Defines the bounded search Q used throughout; implemented in engine.search.
+- id: p1
+  kind: interpretation
+  passage: 'These facts are elementary, and the first is the reason Section 4 can treat discovery value as a matter
+    of access: an abstraction defined from primitives never changes what can be expressed.'
+  rationale: Proposition 1 is proved in Section 3.1; check token_equals_expansion verifies (i) for the plotted token
+    and check accessibility_gains_and_losses illustrates (iii).
+- id: acc-b
+  kind: computation
+  passage: Adding one four-primitive abstraction, the most compressive pattern in one world's history, barely changes
+    the number of distinct behaviours a budget reaches, but at a budget of 13,082 units it makes 1,356 behaviours
+    newly reachable and 1,295 unreachable, out of 3,011 reachable without it.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /accessibility/rows/16/budget
+    reported: 13,082
+    units: compute units
+    conditions: list world 0, top history pattern rev cpy rot swp, verification cost 1, execution cost 1 per primitive
+    decimals: 0
+- id: acc-g
+  kind: computation
+  passage: Adding one four-primitive abstraction, the most compressive pattern in one world's history, barely changes
+    the number of distinct behaviours a budget reaches, but at a budget of 13,082 units it makes 1,356 behaviours
+    newly reachable and 1,295 unreachable, out of 3,011 reachable without it.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /accessibility/rows/16/gained
+    reported: 1,356
+    units: behaviours
+    conditions: reachable with the abstraction and not without
+    decimals: 0
+- id: acc-l
+  kind: computation
+  passage: Adding one four-primitive abstraction, the most compressive pattern in one world's history, barely changes
+    the number of distinct behaviours a budget reaches, but at a budget of 13,082 units it makes 1,356 behaviours
+    newly reachable and 1,295 unreachable, out of 3,011 reachable without it.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /accessibility/rows/16/lost
+    reported: 1,295
+    units: behaviours
+    conditions: reachable without the abstraction and not with it
+    decimals: 0
+- id: acc-0
+  kind: computation
+  passage: Adding one four-primitive abstraction, the most compressive pattern in one world's history, barely changes
+    the number of distinct behaviours a budget reaches, but at a budget of 13,082 units it makes 1,356 behaviours
+    newly reachable and 1,295 unreachable, out of 3,011 reachable without it.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /accessibility/rows/16/base
+    reported: 3,011
+    units: behaviours
+    conditions: reachable with primitives only
+    decimals: 0
+- id: d-comp
+  kind: assumption
+  passage: 'Compression is greedy description-length reduction in the manner of Stitch [@bowers2023] and of minimum
+    description length more generally [@rissanen1978]: a contiguous pattern of $k$ tokens occurring $c$ times without
+    overlap in the solutions saves $$g = c\,(k - 1) - k$$ tokens, the shortened occurrences minus the definition;
+    the compressor adds the pattern with the largest saving among patterns of two or three tokens that occur at
+    least twice, rewrites the solutions, and repeats once, skipping patterns whose behaviour is the identity or
+    duplicates a token.'
+  rationale: The compressor (engine.compress) is a simplified MDL compressor; a different compressor would change
+    which abstractions are learned.
+- id: d-values
+  kind: definition
+  passage: The direct value, discovery value and total value of $a$ are $$V_{\mathrm{direct}}(a) = U(L \cup \{a\}
+    \cup K_0) - U(L \cup K_0), \qquad V_{\mathrm{disc}}(a) = U(L \cup \{a\} \cup K_1) - U(L \cup \{a\} \cup K_0),$$
+    and $V_{\mathrm{total}}(a) = V_{\mathrm{direct}}(a) + V_{\mathrm{disc}}(a)$.
+  rationale: Defines the three values; check decomposition_identity verifies V_total = V_direct + V_disc for every
+    candidate.
+- id: d-relative
+  kind: interpretation
+  passage: Discovery value is relative to the learner, the discovery and evaluation budgets, the curriculum and
+    the distribution of later tasks; it is not a property of the abstraction alone.
+  rationale: Follows from the definition; Propositions 2 and 3 exhibit dependence on later demands and budget.
+- id: d-mediation
+  kind: interpretation
+  passage: Because evaluation depends only on the learned set, $V_{\mathrm{disc}}(a) \neq 0$ requires $K_1 \neq
+    K_0$.
+  rationale: Canonical evaluation order; check identical_library_zero_value confirms zero discovery value whenever
+    the learned sets coincide.
+- id: p2
+  kind: interpretation
+  passage: 'The difference between $a$ and $a''$ lies entirely in the later tasks: those tasks reuse two copies
+    of $a$ and never two copies of $a''$.'
+  rationale: Proposition 2, proved in Section 4.1 and verified by exact enumeration (checks separation_matched and
+    separation_differs).
+- id: p3
+  kind: interpretation
+  passage: The fertility of $a$ depends on discovery programs of four tokens and that of $b$ on programs of three,
+    and the deeper one is lost first.
+  rationale: Proposition 3, proved in Section 4.2 and verified by exact enumeration (checks reversal_high_order
+    and reversal_low_order).
+- id: p3c
+  kind: interpretation
+  passage: The corollary does not say that such scores carry no information about discovery value; it says that
+    any relation between them and discovery value must change with the budget, and Section 5.5 measures how much
+    it changes.
+  rationale: Corollary of Proposition 3; check compression_budget_independent confirms compression ranks are identical
+    across costs.
+- id: d-pred
+  kind: definition
+  passage: 'These two observations suggest a ladder of predictors, ordered by what they use and how much they cost:'
+  rationale: Defines the seven predictors computed in experiment.run_world.
+- id: a-exch
+  kind: assumption
+  passage: A learner can still estimate it if the families in its curriculum resemble later families, for example
+    if both are drawn from the same process.
+  rationale: Exchangeability of task families; in both simulated domains discovery and test families are drawn from
+    the same process.
+- id: a-lists
+  kind: assumption
+  passage: Each world draws five level-1 concepts, sequences of two to four primitives with no shorter primitive
+    description and distinct behaviours, and four level-2 concepts, sequences of two or three units of which each
+    is a level-1 concept with probability 0.75 and a primitive otherwise, with at least two concepts.
+  rationale: World generator parameters for the list domain (lists.make_world, analyses.LISTS).
+- id: a-maze
+  kind: assumption
+  passage: The second domain is navigation in a building of $4 \times 4$ rooms, each of $3 \times 3$ cells, joined
+    by single-cell doors placed along a random spanning tree of the room grid plus each remaining adjacency with
+    probability 0.35; a world has about 160 cells.
+  rationale: World generator for the navigation domain (maze.make_world, analyses.MAZE).
+- id: pr-df
+  kind: computation
+  passage: In both domains a world has 24 discovery families and 60 disjoint test families of four tasks each, 96
+    discovery and 240 test tasks.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/lists/n_disc_fam
+    reported: '24'
+    units: families
+    conditions: discovery families per world
+    decimals: 0
+- id: pr-tf
+  kind: computation
+  passage: In both domains a world has 24 discovery families and 60 disjoint test families of four tasks each, 96
+    discovery and 240 test tasks.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/lists/n_test_fam
+    reported: '60'
+    units: families
+    conditions: test families per world
+    decimals: 0
+- id: pr-b
+  kind: computation
+  passage: Every search has a budget of 15,000 units, with execution cost $c_x = 1$ per primitive; evaluation uses
+    verification cost $c_v = 1$, and discovery is run at $c_v \in \{1, 2, 4, 8\}$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/lists/budget_eval
+    reported: 15,000
+    units: compute units
+    conditions: per task, discovery and evaluation
+    decimals: 0
+- id: pr-nw
+  kind: computation
+  passage: We generated 300 worlds per domain, which gives 2,400 candidates per domain and cost.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/n_worlds
+    reported: '300'
+    units: worlds
+    conditions: per domain
+    decimals: 0
+- id: pr-nc
+  kind: computation
+  passage: We generated 300 worlds per domain, which gives 2,400 candidates per domain and cost.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/n_candidates
+    reported: 2,400
+    units: candidates
+    conditions: navigation domain, cost 1
+    decimals: 0
+- id: pr-12
+  kind: computation
+  passage: The design, parameters and predictor definitions were settled on pilot worlds drawn from other seeds;
+    the curriculum was enlarged from 12 to 24 families during piloting because the smaller one gave noisier outcomes,
+    and Section 5.4 reports the smaller one as a check.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/small_curriculum_families
+    reported: '12'
+    units: families
+    conditions: small curriculum check
+    decimals: 0
+- id: pr-pilot
+  kind: assumption
+  passage: The design, parameters and predictor definitions were settled on pilot worlds drawn from other seeds;
+    the curriculum was enlarged from 12 to 24 families during piloting because the smaller one gave noisier outcomes,
+    and Section 5.4 reports the smaller one as a check.
+  rationale: Pilot worlds used numpy default_rng(seed) for seeds 0-39; the recorded run uses default_rng([20261021,
+    seed]).
+- id: b-r1l
+  kind: computation
+  passage: At verification cost 1, the base learner solves on average 29.3 of the 96 discovery tasks in the first
+    round and 41.7 in its last round in the list domain, and 23.7 and 31.2 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/base_round1_solved
+    reported: '29.3'
+    units: tasks
+    conditions: mean over worlds, first round, no access; list domain, 300 worlds, 8 candidates per world, verification
+      cost 1 during discovery
+    decimals: 1
+- id: b-nd
+  kind: computation
+  passage: At verification cost 1, the base learner solves on average 29.3 of the 96 discovery tasks in the first
+    round and 41.7 in its last round in the list domain, and 23.7 and 31.2 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/n_disc
+    reported: '96'
+    units: tasks
+    conditions: discovery tasks per world
+    decimals: 0
+- id: b-fl
+  kind: computation
+  passage: At verification cost 1, the base learner solves on average 29.3 of the 96 discovery tasks in the first
+    round and 41.7 in its last round in the list domain, and 23.7 and 31.2 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/base_final_solved
+    reported: '41.7'
+    units: tasks
+    conditions: mean over worlds, last round; list domain, 300 worlds, 8 candidates per world, verification cost
+      1 during discovery
+    decimals: 1
+- id: b-r1m
+  kind: computation
+  passage: At verification cost 1, the base learner solves on average 29.3 of the 96 discovery tasks in the first
+    round and 41.7 in its last round in the list domain, and 23.7 and 31.2 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/base_round1_solved
+    reported: '23.7'
+    units: tasks
+    conditions: first round; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+- id: b-fm
+  kind: computation
+  passage: At verification cost 1, the base learner solves on average 29.3 of the 96 discovery tasks in the first
+    round and 41.7 in its last round in the list domain, and 23.7 and 31.2 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/base_final_solved
+    reported: '31.2'
+    units: tasks
+    conditions: last round; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+- id: b-ul
+  kind: computation
+  passage: Its final library solves 40.9% of the test tasks in the list domain and 27.7% in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/u_no
+    reported: 40.9%
+    units: share of test tasks
+    conditions: no-access library; list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: b-um
+  kind: computation
+  passage: Its final library solves 40.9% of the test tasks in the list domain and 27.7% in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/u_no
+    reported: 27.7%
+    units: share of test tasks
+    conditions: no-access library; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 1
+    scale: 100
+- id: v-sdl
+  kind: computation
+  passage: 'In the list domain the standard deviation of discovery value across candidates is 0.096, against 0.042
+    for direct value: early access changes the share of test tasks solved by more than five percentage points for
+    47.8% of candidates, in either direction, with 46.2% of candidates positive and 41.8% negative.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/sd/disc
+    reported: '0.096'
+    units: share of test tasks
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 3
+- id: v-sdr
+  kind: computation
+  passage: 'In the list domain the standard deviation of discovery value across candidates is 0.096, against 0.042
+    for direct value: early access changes the share of test tasks solved by more than five percentage points for
+    47.8% of candidates, in either direction, with 46.2% of candidates positive and 41.8% negative.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/sd/direct
+    reported: '0.042'
+    units: share of test tasks
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 3
+- id: v-gt5
+  kind: computation
+  passage: 'In the list domain the standard deviation of discovery value across candidates is 0.096, against 0.042
+    for direct value: early access changes the share of test tasks solved by more than five percentage points for
+    47.8% of candidates, in either direction, with 46.2% of candidates positive and 41.8% negative.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/share_abs_disc_gt_005
+    reported: 47.8%
+    units: share of candidates
+    conditions: '|discovery value| > 0.05; list domain, 300 worlds, 8 candidates per world, verification cost 1
+      during discovery'
+    decimals: 1
+    scale: 100
+- id: v-pos
+  kind: computation
+  passage: 'In the list domain the standard deviation of discovery value across candidates is 0.096, against 0.042
+    for direct value: early access changes the share of test tasks solved by more than five percentage points for
+    47.8% of candidates, in either direction, with 46.2% of candidates positive and 41.8% negative.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/share_disc_pos
+    reported: 46.2%
+    units: share of candidates
+    conditions: discovery value > 0; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 1
+    scale: 100
+- id: v-neg
+  kind: computation
+  passage: 'In the list domain the standard deviation of discovery value across candidates is 0.096, against 0.042
+    for direct value: early access changes the share of test tasks solved by more than five percentage points for
+    47.8% of candidates, in either direction, with 46.2% of candidates positive and 41.8% negative.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/share_disc_neg
+    reported: 41.8%
+    units: share of candidates
+    conditions: discovery value < 0; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 1
+    scale: 100
+- id: v-exc
+  kind: computation
+  passage: Discovery value exceeds direct value in magnitude for 65.6% of candidates, and the two have opposite
+    signs for 55.8% of those for which both are nonzero.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/share_disc_exceeds_direct
+    reported: 65.6%
+    units: share of candidates
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: v-opp
+  kind: computation
+  passage: Discovery value exceeds direct value in magnitude for 65.6% of candidates, and the two have opposite
+    signs for 55.8% of those for which both are nonzero.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/share_opposite_sign
+    reported: 55.8%
+    units: share of candidates with both values nonzero
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: v-msd
+  kind: computation
+  passage: In navigation the corresponding standard deviations are 0.053 and 0.037; 32.0% of candidates change the
+    test score by more than five points through discovery, and the signs are opposite for 58.3%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/sd/disc
+    reported: '0.053'
+    units: share of test tasks
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 3
+- id: v-msr
+  kind: computation
+  passage: In navigation the corresponding standard deviations are 0.053 and 0.037; 32.0% of candidates change the
+    test score by more than five points through discovery, and the signs are opposite for 58.3%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/sd/direct
+    reported: '0.037'
+    units: share of test tasks
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 3
+- id: v-mgt5
+  kind: computation
+  passage: In navigation the corresponding standard deviations are 0.053 and 0.037; 32.0% of candidates change the
+    test score by more than five points through discovery, and the signs are opposite for 58.3%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/share_abs_disc_gt_005
+    reported: 32.0%
+    units: share of candidates
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: v-mopp
+  kind: computation
+  passage: In navigation the corresponding standard deviations are 0.053 and 0.037; 32.0% of candidates change the
+    test score by more than five points through discovery, and the signs are opposite for 58.3%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/share_opposite_sign
+    reported: 58.3%
+    units: share of candidates with both values nonzero
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: r-l
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/reliability/split_half/mean
+    reported: '0.64'
+    units: rank correlation
+    conditions: within-world Spearman correlation of discovery value between alternate halves of the 60 test families,
+      mean over worlds; list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: r-llo
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/reliability/split_half/lo
+    reported: '0.60'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: r-lhi
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/reliability/split_half/hi
+    reported: '0.68'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: r-m
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/reliability/split_half/mean
+    reported: '0.47'
+    units: rank correlation
+    conditions: within-world Spearman correlation of discovery value between alternate halves of the 60 test families,
+      mean over worlds; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: r-mlo
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/reliability/split_half/lo
+    reported: '0.44'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: r-mhi
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/reliability/split_half/hi
+    reported: '0.51'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: r-lsb
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/reliability/spearman_brown
+    reported: '0.78'
+    units: reliability
+    conditions: Spearman-Brown step-up of the split-half value
+    decimals: 2
+- id: r-msb
+  kind: computation
+  passage: The split-half reliability of discovery value across candidates within a world is 0.64 (95% interval
+    0.60 to 0.68) in the list domain and 0.47 (0.44 to 0.51) in navigation, or 0.78 and 0.64 for the full test set
+    by the Spearman–Brown formula.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/reliability/spearman_brown
+    reported: '0.64'
+    units: reliability
+    conditions: Spearman-Brown step-up; navigation
+    decimals: 2
+- id: m-ln
+  kind: computation
+  passage: Among 505 pairs of candidates in the same list world whose compression savings differ by at most 1 and
+    whose direct values, measured on the first half of the test families, differ by at most one task, the difference
+    in discovery value measured on one quarter of the test families correlates at 0.57 with the difference measured
+    on another quarter, and 40.6% of these pairs differ by more than five points; in navigation, 912 such pairs
+    give 0.30 and 38.4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/matched/n_pairs
+    reported: '505'
+    units: pairs
+    conditions: pairs within a world with compression savings within 1 and direct value (first test half) within
+      one task; difference in discovery value on two quarters of the test families; list domain, 300 worlds, 8 candidates
+      per world, verification cost 1 during discovery
+    decimals: 0
+- id: m-lr
+  kind: computation
+  passage: Among 505 pairs of candidates in the same list world whose compression savings differ by at most 1 and
+    whose direct values, measured on the first half of the test families, differ by at most one task, the difference
+    in discovery value measured on one quarter of the test families correlates at 0.57 with the difference measured
+    on another quarter, and 40.6% of these pairs differ by more than five points; in navigation, 912 such pairs
+    give 0.30 and 38.4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/matched/rho_halves
+    reported: '0.57'
+    units: rank correlation
+    conditions: pairs within a world with compression savings within 1 and direct value (first test half) within
+      one task; difference in discovery value on two quarters of the test families
+    decimals: 2
+- id: m-lg
+  kind: computation
+  passage: Among 505 pairs of candidates in the same list world whose compression savings differ by at most 1 and
+    whose direct values, measured on the first half of the test families, differ by at most one task, the difference
+    in discovery value measured on one quarter of the test families correlates at 0.57 with the difference measured
+    on another quarter, and 40.6% of these pairs differ by more than five points; in navigation, 912 such pairs
+    give 0.30 and 38.4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/matched/share_abs_diff_gt_005
+    reported: 40.6%
+    units: share of pairs
+    conditions: '|difference| > 0.05 on the second test half; pairs within a world with compression savings within
+      1 and direct value (first test half) within one task; difference in discovery value on two quarters of the
+      test families'
+    decimals: 1
+    scale: 100
+- id: m-mn
+  kind: computation
+  passage: Among 505 pairs of candidates in the same list world whose compression savings differ by at most 1 and
+    whose direct values, measured on the first half of the test families, differ by at most one task, the difference
+    in discovery value measured on one quarter of the test families correlates at 0.57 with the difference measured
+    on another quarter, and 40.6% of these pairs differ by more than five points; in navigation, 912 such pairs
+    give 0.30 and 38.4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/matched/n_pairs
+    reported: '912'
+    units: pairs
+    conditions: pairs within a world with compression savings within 1 and direct value (first test half) within
+      one task; difference in discovery value on two quarters of the test families; navigation domain, 300 worlds,
+      8 candidates per world, verification cost 1 during discovery
+    decimals: 0
+- id: m-mr
+  kind: computation
+  passage: Among 505 pairs of candidates in the same list world whose compression savings differ by at most 1 and
+    whose direct values, measured on the first half of the test families, differ by at most one task, the difference
+    in discovery value measured on one quarter of the test families correlates at 0.57 with the difference measured
+    on another quarter, and 40.6% of these pairs differ by more than five points; in navigation, 912 such pairs
+    give 0.30 and 38.4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/matched/rho_halves
+    reported: '0.30'
+    units: rank correlation
+    conditions: pairs within a world with compression savings within 1 and direct value (first test half) within
+      one task; difference in discovery value on two quarters of the test families; navigation
+    decimals: 2
+- id: m-mg
+  kind: computation
+  passage: Among 505 pairs of candidates in the same list world whose compression savings differ by at most 1 and
+    whose direct values, measured on the first half of the test families, differ by at most one task, the difference
+    in discovery value measured on one quarter of the test families correlates at 0.57 with the difference measured
+    on another quarter, and 40.6% of these pairs differ by more than five points; in navigation, 912 such pairs
+    give 0.30 and 38.4%.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/matched/share_abs_diff_gt_005
+    reported: 38.4%
+    units: share of pairs
+    conditions: pairs within a world with compression savings within 1 and direct value (first test half) within
+      one task; difference in discovery value on two quarters of the test families; navigation
+    decimals: 1
+    scale: 100
+- id: dd-l
+  kind: computation
+  passage: Measured on disjoint halves of the test families, their within-world correlation is $-0.12$ (95% interval
+    $-0.16$ to $-0.07$) in the list domain and $-0.23$ ($-0.26$ to $-0.20$) in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/rho_direct_disc_crossfit/mean
+    reported: '-0.12'
+    units: rank correlation
+    conditions: direct value on one test half against discovery value on the other, averaged over both assignments;
+      list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: dd-llo
+  kind: computation
+  passage: Measured on disjoint halves of the test families, their within-world correlation is $-0.12$ (95% interval
+    $-0.16$ to $-0.07$) in the list domain and $-0.23$ ($-0.26$ to $-0.20$) in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/rho_direct_disc_crossfit/lo
+    reported: '-0.16'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: dd-lhi
+  kind: computation
+  passage: Measured on disjoint halves of the test families, their within-world correlation is $-0.12$ (95% interval
+    $-0.16$ to $-0.07$) in the list domain and $-0.23$ ($-0.26$ to $-0.20$) in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/rho_direct_disc_crossfit/hi
+    reported: '-0.07'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: dd-m
+  kind: computation
+  passage: Measured on disjoint halves of the test families, their within-world correlation is $-0.12$ (95% interval
+    $-0.16$ to $-0.07$) in the list domain and $-0.23$ ($-0.26$ to $-0.20$) in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/rho_direct_disc_crossfit/mean
+    reported: '-0.23'
+    units: rank correlation
+    conditions: direct value on one test half against discovery value on the other, averaged over both assignments;
+      navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: dd-mlo
+  kind: computation
+  passage: Measured on disjoint halves of the test families, their within-world correlation is $-0.12$ (95% interval
+    $-0.16$ to $-0.07$) in the list domain and $-0.23$ ($-0.26$ to $-0.20$) in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/rho_direct_disc_crossfit/lo
+    reported: '-0.26'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: dd-mhi
+  kind: computation
+  passage: Measured on disjoint halves of the test families, their within-world correlation is $-0.12$ (95% interval
+    $-0.16$ to $-0.07$) in the list domain and $-0.23$ ($-0.26$ to $-0.20$) in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/rho_direct_disc_crossfit/hi
+    reported: '-0.20'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: dd-mech
+  kind: interpretation
+  passage: In individual worlds we inspected, one mechanism is visible.
+  rationale: Observed in pilot world inspection (fragments of a missing level-1 concept with large discovery value
+    and small direct value); offered as a mechanism, not measured across worlds.
+- id: k-same-l
+  kind: computation
+  passage: 'Early access almost always changes the learned library: the learned set is identical with and without
+    the candidate for 5.3% of candidates in the list domain and 1.4% in navigation, and in all those cases discovery
+    value is exactly zero, as Section 3.2 requires.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/share_same_library
+    reported: 5.3%
+    units: share of candidates
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-same-m
+  kind: computation
+  passage: 'Early access almost always changes the learned library: the learned set is identical with and without
+    the candidate for 5.3% of candidates in the list domain and 1.4% in navigation, and in all those cases discovery
+    value is exactly zero, as Section 3.2 requires.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/mechanism/share_same_library
+    reported: 1.4%
+    units: share of candidates
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-desc-l
+  kind: computation
+  passage: For 74.7% of list candidates and 78.5% of navigation candidates the learner builds at least one descendant,
+    an abstraction containing the candidate.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/share_with_descendant
+    reported: 74.7%
+    units: share of candidates
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-desc-m
+  kind: computation
+  passage: For 74.7% of list candidates and 78.5% of navigation candidates the learner builds at least one descendant,
+    an abstraction containing the candidate.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/mechanism/share_with_descendant
+    reported: 78.5%
+    units: share of candidates
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-red-l
+  kind: computation
+  passage: 'The remaining 21.3% and 20.2% change the learned set without any descendant: the candidate changes which
+    discovery tasks are solved and how their solutions are written, and the compressor then selects different abstractions.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/share_changed_no_descendant
+    reported: 21.3%
+    units: share of candidates
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-red-m
+  kind: computation
+  passage: 'The remaining 21.3% and 20.2% change the learned set without any descendant: the candidate changes which
+    discovery tasks are solved and how their solutions are written, and the compressor then selects different abstractions.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/mechanism/share_changed_no_descendant
+    reported: 20.2%
+    units: share of candidates
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-abs-l
+  kind: computation
+  passage: These redirections carry 19.7% and 19.1% of the total absolute discovery value.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/share_abs_disc_from_no_descendant
+    reported: 19.7%
+    units: share of summed |discovery value|
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-abs-m
+  kind: computation
+  passage: These redirections carry 19.7% and 19.1% of the total absolute discovery value.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/mechanism/share_abs_disc_from_no_descendant
+    reported: 19.1%
+    units: share of summed |discovery value|
+    conditions: navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: k-mn
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/mean_disc/changed_no_descendant
+    reported: '-0.024'
+    units: share of test tasks
+    conditions: mean discovery value, library changed without descendants; list domain, 300 worlds, 8 candidates
+      per world, verification cost 1 during discovery
+    decimals: 3
+- id: k-md
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/mean_disc/with_descendant
+    reported: '0.016'
+    units: share of test tasks
+    conditions: mean discovery value, at least one descendant; list domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 3
+- id: k-rho
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/rho_desc_disc/mean
+    reported: '0.15'
+    units: rank correlation
+    conditions: number of descendants against discovery value; list domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 2
+- id: k-rlo
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/rho_desc_disc/lo
+    reported: '0.10'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: k-rhi
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/mechanism/rho_desc_disc/hi
+    reported: '0.21'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: k-mlo
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/mechanism/rho_desc_disc/lo
+    reported: '-0.05'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples; navigation
+    decimals: 2
+- id: k-mhi
+  kind: computation
+  passage: In the list domain their mean effect is negative, $-0.024$, against 0.016 for candidates with descendants,
+    and the number of descendants correlates with discovery value at 0.15 (0.10 to 0.21) within worlds; in navigation
+    the correlation is indistinguishable from zero ($-0.05$ to 0.05).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/mechanism/rho_desc_disc/hi
+    reported: '0.05'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples; navigation
+    decimals: 2
+- id: c-share
+  kind: computation
+  passage: True concepts make up 47.3% of the candidates and have mean discovery value 0.011, against 0.003 for
+    fragments and cross-boundary patterns, and mean direct value 0.028 against 0.012.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/share_constituent
+    reported: 47.3%
+    units: share of candidates
+    conditions: list domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 1
+    scale: 100
+- id: c-dc
+  kind: computation
+  passage: True concepts make up 47.3% of the candidates and have mean discovery value 0.011, against 0.003 for
+    fragments and cross-boundary patterns, and mean direct value 0.028 against 0.012.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/disc_constituent
+    reported: '0.011'
+    units: share of test tasks
+    conditions: mean discovery value of level-1 concepts
+    decimals: 3
+- id: c-do
+  kind: computation
+  passage: True concepts make up 47.3% of the candidates and have mean discovery value 0.011, against 0.003 for
+    fragments and cross-boundary patterns, and mean direct value 0.028 against 0.012.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/disc_other
+    reported: '0.003'
+    units: share of test tasks
+    conditions: mean discovery value of other candidates
+    decimals: 3
+- id: c-rc
+  kind: computation
+  passage: True concepts make up 47.3% of the candidates and have mean discovery value 0.011, against 0.003 for
+    fragments and cross-boundary patterns, and mean direct value 0.028 against 0.012.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/direct_constituent
+    reported: '0.028'
+    units: share of test tasks
+    conditions: mean direct value of level-1 concepts
+    decimals: 3
+- id: c-ro
+  kind: computation
+  passage: True concepts make up 47.3% of the candidates and have mean discovery value 0.011, against 0.003 for
+    fragments and cross-boundary patterns, and mean direct value 0.028 against 0.012.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/direct_other
+    reported: '0.012'
+    units: share of test tasks
+    conditions: mean direct value of other candidates
+    decimals: 3
+- id: c-un
+  kind: computation
+  passage: 'A ground-truth score that credits a candidate for supplying part of a concept the base learner never
+    learned, weighted by how many test families use that concept, does not predict discovery value: its within-world
+    correlation is $-0.03$ ($-0.08$ to 0.03).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/rho_unlock/mean
+    reported: '-0.03'
+    units: rank correlation
+    conditions: unlock score (lists.unlock_share) against discovery value; list domain, 300 worlds, 8 candidates
+      per world, verification cost 1 during discovery
+    decimals: 2
+- id: c-unlo
+  kind: computation
+  passage: 'A ground-truth score that credits a candidate for supplying part of a concept the base learner never
+    learned, weighted by how many test families use that concept, does not predict discovery value: its within-world
+    correlation is $-0.03$ ($-0.08$ to 0.03).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/rho_unlock/lo
+    reported: '-0.08'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: c-unhi
+  kind: computation
+  passage: 'A ground-truth score that credits a candidate for supplying part of a concept the base learner never
+    learned, weighted by how many test families use that concept, does not predict discovery value: its within-world
+    correlation is $-0.03$ ($-0.08$ to 0.03).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/constituents/rho_unlock/hi
+    reported: '0.03'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: p-lc
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/comp/mean
+    reported: '0.11'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-lclo
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/comp/lo
+    reported: '0.06'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-lchi
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/comp/hi
+    reported: '0.15'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-lf
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/freq/mean
+    reported: '0.01'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-ld
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/direct/mean
+    reported: '-0.12'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-ly
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/yield/mean
+    reported: '0.17'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-lylo
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/yield/lo
+    reported: '0.12'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-lyhi
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/yield/hi
+    reported: '0.22'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-lg
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/gain/mean
+    reported: '0.13'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-lfc
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/fc/mean
+    reported: '0.06'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-la
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/lookahead/mean
+    reported: '0.22'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-lalo
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/lookahead/lo
+    reported: '0.17'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-lahi
+  kind: computation
+  passage: In the list domain at verification cost 1, history compression correlates with discovery value at 0.11
+    (0.06 to 0.15) and history frequency at 0.01; direct value, measured on the other half of the test families,
+    at $-0.12$; frontier yield at 0.17 (0.12 to 0.22), frontier gain at 0.13 and frontier compression at 0.06; and
+    the look-ahead at 0.22 (0.17 to 0.26).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/lookahead/hi
+    reported: '0.26'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-lceil
+  kind: computation
+  passage: A predictor that measured each candidate's discovery value without error would be expected to correlate
+    at about 0.88 with the measured values, given their reliability.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/reliability/ceiling
+    reported: '0.88'
+    units: rank correlation
+    conditions: square root of Spearman-Brown reliability; list domain, 300 worlds, 8 candidates per world, verification
+      cost 1 during discovery
+    decimals: 2
+- id: p-mc
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/comp/mean
+    reported: '0.08'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-mclo
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/comp/lo
+    reported: '0.04'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-mchi
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/comp/hi
+    reported: '0.12'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-my
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/yield/mean
+    reported: '0.07'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-mg
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/gain/mean
+    reported: '0.03'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-mfc
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/fc/mean
+    reported: '-0.04'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-ma
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/lookahead/mean
+    reported: '0.08'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-malo
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/lookahead/lo
+    reported: '0.03'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-mahi
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/lookahead/hi
+    reported: '0.12'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 2
+- id: p-mceil
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/reliability/ceiling
+    reported: '0.80'
+    units: rank correlation
+    conditions: ceiling; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: p-md
+  kind: computation
+  passage: In navigation, history compression correlates at 0.08 (0.04 to 0.12), frontier yield at 0.07, frontier
+    gain at 0.03, frontier compression at $-0.04$ and the look-ahead at 0.08 (0.03 to 0.12), against a ceiling of
+    about 0.80; direct value correlates at $-0.23$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/rho/direct/mean
+    reported: '-0.23'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; navigation
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: g-la
+  kind: computation
+  passage: In practical terms, choosing the candidate a predictor ranks first raises discovery value above the world's
+    average candidate by 0.036 with the look-ahead, 0.022 with frontier yield and 0.013 with history compression
+    in the list domain, against 0.114 for choosing the best candidate in hindsight; the look-ahead thus captures
+    about a third of the attainable gain.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/choice_gain/lookahead/mean
+    reported: '0.036'
+    units: share of test tasks
+    conditions: mean discovery value of the top-ranked candidate minus the world mean, on each test half with the
+      predictor from the other (direct) or the full data; list domain, 300 worlds, 8 candidates per world, verification
+      cost 1 during discovery
+    decimals: 3
+- id: g-ly
+  kind: computation
+  passage: In practical terms, choosing the candidate a predictor ranks first raises discovery value above the world's
+    average candidate by 0.036 with the look-ahead, 0.022 with frontier yield and 0.013 with history compression
+    in the list domain, against 0.114 for choosing the best candidate in hindsight; the look-ahead thus captures
+    about a third of the attainable gain.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/choice_gain/yield/mean
+    reported: '0.022'
+    units: share of test tasks
+    conditions: mean discovery value of the top-ranked candidate minus the world mean, on each test half with the
+      predictor from the other (direct) or the full data; list domain, 300 worlds, 8 candidates per world, verification
+      cost 1 during discovery
+    decimals: 3
+- id: g-lc
+  kind: computation
+  passage: In practical terms, choosing the candidate a predictor ranks first raises discovery value above the world's
+    average candidate by 0.036 with the look-ahead, 0.022 with frontier yield and 0.013 with history compression
+    in the list domain, against 0.114 for choosing the best candidate in hindsight; the look-ahead thus captures
+    about a third of the attainable gain.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/choice_gain/comp/mean
+    reported: '0.013'
+    units: share of test tasks
+    conditions: mean discovery value of the top-ranked candidate minus the world mean, on each test half with the
+      predictor from the other (direct) or the full data; list domain, 300 worlds, 8 candidates per world, verification
+      cost 1 during discovery
+    decimals: 3
+- id: g-lo
+  kind: computation
+  passage: In practical terms, choosing the candidate a predictor ranks first raises discovery value above the world's
+    average candidate by 0.036 with the look-ahead, 0.022 with frontier yield and 0.013 with history compression
+    in the list domain, against 0.114 for choosing the best candidate in hindsight; the look-ahead thus captures
+    about a third of the attainable gain.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/choice_gain/oracle/mean
+    reported: '0.114'
+    units: share of test tasks
+    conditions: best candidate in hindsight; list domain, 300 worlds, 8 candidates per world, verification cost
+      1 during discovery
+    decimals: 3
+- id: g-ma
+  kind: computation
+  passage: In navigation the look-ahead and history compression each gain 0.006 against an attainable 0.066, and
+    choosing by direct value loses 0.016.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/choice_gain/lookahead/mean
+    reported: '0.006'
+    units: share of test tasks
+    conditions: mean discovery value of the top-ranked candidate minus the world mean, on each test half with the
+      predictor from the other (direct) or the full data; navigation domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 3
+- id: g-mc
+  kind: computation
+  passage: In navigation the look-ahead and history compression each gain 0.006 against an attainable 0.066, and
+    choosing by direct value loses 0.016.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/choice_gain/comp/mean
+    reported: '0.006'
+    units: share of test tasks
+    conditions: mean discovery value of the top-ranked candidate minus the world mean, on each test half with the
+      predictor from the other (direct) or the full data; navigation domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 3
+- id: g-mo
+  kind: computation
+  passage: In navigation the look-ahead and history compression each gain 0.006 against an attainable 0.066, and
+    choosing by direct value loses 0.016.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/choice_gain/oracle/mean
+    reported: '0.066'
+    units: share of test tasks
+    conditions: best in hindsight; navigation domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 3
+- id: g-md
+  kind: computation
+  passage: In navigation the look-ahead and history compression each gain 0.006 against an attainable 0.066, and
+    choosing by direct value loses 0.016.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/predictors/choice_gain/direct/mean
+    reported: '0.016'
+    units: share of test tasks (loss, sign reversed by scale -1)
+    conditions: mean discovery value of the top-ranked candidate minus the world mean, on each test half with the
+      predictor from the other (direct) or the full data; navigation domain, 300 worlds, 8 candidates per world,
+      verification cost 1 during discovery
+    decimals: 3
+    scale: -1
+- id: s-c
+  kind: computation
+  passage: 'The ordering of predictors is stable when the curriculum is halved to 12 families in the list domain:
+    history compression correlates at 0.10, frontier yield at 0.21, frontier gain at 0.19 and the look-ahead at
+    0.21, and direct value at $-0.13$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists12/1.0/predictors/rho/comp/mean
+    reported: '0.10'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain with 12 discovery families, 300 worlds, cost 1
+    decimals: 2
+- id: s-y
+  kind: computation
+  passage: 'The ordering of predictors is stable when the curriculum is halved to 12 families in the list domain:
+    history compression correlates at 0.10, frontier yield at 0.21, frontier gain at 0.19 and the look-ahead at
+    0.21, and direct value at $-0.13$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists12/1.0/predictors/rho/yield/mean
+    reported: '0.21'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain with 12 discovery families, 300 worlds, cost 1
+    decimals: 2
+- id: s-g
+  kind: computation
+  passage: 'The ordering of predictors is stable when the curriculum is halved to 12 families in the list domain:
+    history compression correlates at 0.10, frontier yield at 0.21, frontier gain at 0.19 and the look-ahead at
+    0.21, and direct value at $-0.13$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists12/1.0/predictors/rho/gain/mean
+    reported: '0.19'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain with 12 discovery families, 300 worlds, cost 1
+    decimals: 2
+- id: s-a
+  kind: computation
+  passage: 'The ordering of predictors is stable when the curriculum is halved to 12 families in the list domain:
+    history compression correlates at 0.10, frontier yield at 0.21, frontier gain at 0.19 and the look-ahead at
+    0.21, and direct value at $-0.13$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists12/1.0/predictors/rho/lookahead/mean
+    reported: '0.21'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain with 12 discovery families, 300 worlds, cost 1
+    decimals: 2
+- id: s-d
+  kind: computation
+  passage: 'The ordering of predictors is stable when the curriculum is halved to 12 families in the list domain:
+    history compression correlates at 0.10, frontier yield at 0.21, frontier gain at 0.19 and the look-ahead at
+    0.21, and direct value at $-0.13$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists12/1.0/predictors/rho/direct/mean
+    reported: '-0.13'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain with 12 discovery families, 300 worlds, cost 1
+    decimals: 2
+- id: x-l2
+  kind: computation
+  passage: The agreement between rankings at verification cost 1 and at a higher cost, measured on disjoint halves
+    of the test families and divided by the geometric mean of the two within-cost reliabilities, falls from 0.56
+    at cost 2 to 0.36 at cost 4 and 0.16 at cost 8 in the list domain, and from 0.58 to 0.32 and 0.19 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/cross_vs_cost1/2.0/disattenuated
+    reported: '0.56'
+    units: rank correlation
+    conditions: cost-1 ranking against higher-cost ranking on disjoint test halves, divided by the geometric mean
+      of the two within-cost split-half reliabilities; cost 2; list domain
+    decimals: 2
+- id: x-l4
+  kind: computation
+  passage: The agreement between rankings at verification cost 1 and at a higher cost, measured on disjoint halves
+    of the test families and divided by the geometric mean of the two within-cost reliabilities, falls from 0.56
+    at cost 2 to 0.36 at cost 4 and 0.16 at cost 8 in the list domain, and from 0.58 to 0.32 and 0.19 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/cross_vs_cost1/4.0/disattenuated
+    reported: '0.36'
+    units: rank correlation
+    conditions: cost-1 ranking against higher-cost ranking on disjoint test halves, divided by the geometric mean
+      of the two within-cost split-half reliabilities; cost 4; list domain
+    decimals: 2
+- id: x-l8
+  kind: computation
+  passage: The agreement between rankings at verification cost 1 and at a higher cost, measured on disjoint halves
+    of the test families and divided by the geometric mean of the two within-cost reliabilities, falls from 0.56
+    at cost 2 to 0.36 at cost 4 and 0.16 at cost 8 in the list domain, and from 0.58 to 0.32 and 0.19 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/cross_vs_cost1/8.0/disattenuated
+    reported: '0.16'
+    units: rank correlation
+    conditions: cost-1 ranking against higher-cost ranking on disjoint test halves, divided by the geometric mean
+      of the two within-cost split-half reliabilities; cost 8; list domain
+    decimals: 2
+- id: x-m2
+  kind: computation
+  passage: The agreement between rankings at verification cost 1 and at a higher cost, measured on disjoint halves
+    of the test families and divided by the geometric mean of the two within-cost reliabilities, falls from 0.56
+    at cost 2 to 0.36 at cost 4 and 0.16 at cost 8 in the list domain, and from 0.58 to 0.32 and 0.19 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/cross_vs_cost1/2.0/disattenuated
+    reported: '0.58'
+    units: rank correlation
+    conditions: cost-1 ranking against higher-cost ranking on disjoint test halves, divided by the geometric mean
+      of the two within-cost split-half reliabilities; cost 2; navigation
+    decimals: 2
+- id: x-m4
+  kind: computation
+  passage: The agreement between rankings at verification cost 1 and at a higher cost, measured on disjoint halves
+    of the test families and divided by the geometric mean of the two within-cost reliabilities, falls from 0.56
+    at cost 2 to 0.36 at cost 4 and 0.16 at cost 8 in the list domain, and from 0.58 to 0.32 and 0.19 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/cross_vs_cost1/4.0/disattenuated
+    reported: '0.32'
+    units: rank correlation
+    conditions: cost-1 ranking against higher-cost ranking on disjoint test halves, divided by the geometric mean
+      of the two within-cost split-half reliabilities; cost 4; navigation
+    decimals: 2
+- id: x-m8
+  kind: computation
+  passage: The agreement between rankings at verification cost 1 and at a higher cost, measured on disjoint halves
+    of the test families and divided by the geometric mean of the two within-cost reliabilities, falls from 0.56
+    at cost 2 to 0.36 at cost 4 and 0.16 at cost 8 in the list domain, and from 0.58 to 0.32 and 0.19 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/cross_vs_cost1/8.0/disattenuated
+    reported: '0.19'
+    units: rank correlation
+    conditions: cost-1 ranking against higher-cost ranking on disjoint test halves, divided by the geometric mean
+      of the two within-cost split-half reliabilities; cost 8; navigation
+    decimals: 2
+- id: w-l8
+  kind: computation
+  passage: Rankings of the same candidates in the same worlds are thus close to unrelated when checking a candidate
+    costs eight times as much, although the within-cost reliability stays between 0.57 and 0.64 in the list domain
+    and between 0.46 and 0.48 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/within_split_half/8.0
+    reported: '0.57'
+    units: rank correlation
+    conditions: split-half reliability at cost 8; list domain
+    decimals: 2
+- id: w-l1
+  kind: computation
+  passage: Rankings of the same candidates in the same worlds are thus close to unrelated when checking a candidate
+    costs eight times as much, although the within-cost reliability stays between 0.57 and 0.64 in the list domain
+    and between 0.46 and 0.48 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/within_split_half/1.0
+    reported: '0.64'
+    units: rank correlation
+    conditions: split-half reliability at cost 1; list domain
+    decimals: 2
+- id: w-m8
+  kind: computation
+  passage: Rankings of the same candidates in the same worlds are thus close to unrelated when checking a candidate
+    costs eight times as much, although the within-cost reliability stays between 0.57 and 0.64 in the list domain
+    and between 0.46 and 0.48 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/within_split_half/8.0
+    reported: '0.46'
+    units: rank correlation
+    conditions: split-half reliability at cost 8; navigation
+    decimals: 2
+- id: w-m2
+  kind: computation
+  passage: Rankings of the same candidates in the same worlds are thus close to unrelated when checking a candidate
+    costs eight times as much, although the within-cost reliability stays between 0.57 and 0.64 in the list domain
+    and between 0.46 and 0.48 in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/within_split_half/2.0
+    reported: '0.48'
+    units: rank correlation
+    conditions: split-half reliability at cost 2; navigation
+    decimals: 2
+- id: x-c1
+  kind: computation
+  passage: 'History compression does not depend on the verification cost, so its agreement with discovery value
+    must move as the rankings move: in the list domain it is 0.11 at cost 1 and $-0.02$ ($-0.06$ to 0.03) at cost
+    4.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/predictors/rho/comp/mean
+    reported: '0.11'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, 300 worlds, 8 candidates per world, verification cost 1 during discovery
+    decimals: 2
+- id: x-c4
+  kind: computation
+  passage: 'History compression does not depend on the verification cost, so its agreement with discovery value
+    must move as the rankings move: in the list domain it is 0.11 at cost 1 and $-0.02$ ($-0.06$ to 0.03) at cost
+    4.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/4.0/predictors/rho/comp/mean
+    reported: '-0.02'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; point estimate; list
+      domain, verification cost 4
+    decimals: 2
+- id: x-c4lo
+  kind: computation
+  passage: 'History compression does not depend on the verification cost, so its agreement with discovery value
+    must move as the rankings move: in the list domain it is 0.11 at cost 1 and $-0.02$ ($-0.06$ to 0.03) at cost
+    4.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/4.0/predictors/rho/comp/lo
+    reported: '-0.06'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, verification cost 4
+    decimals: 2
+- id: x-c4hi
+  kind: computation
+  passage: 'History compression does not depend on the verification cost, so its agreement with discovery value
+    must move as the rankings move: in the list domain it is 0.11 at cost 1 and $-0.02$ ($-0.06$ to 0.03) at cost
+    4.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/4.0/predictors/rho/comp/hi
+    reported: '0.03'
+    units: rank correlation
+    conditions: within-world Spearman correlation across 8 candidates, mean over 300 worlds; 95% bootstrap interval
+      over worlds, 4,000 resamples; list domain, verification cost 4
+    decimals: 2
+- id: mm-m
+  kind: computation
+  passage: 'The look-ahead does so in the list domain: computed at cost 1 and cost 4 and compared with discovery
+    value at the same cost, it correlates at 0.23; compared with discovery value at the other cost, at 0.15, a difference
+    of 0.08 (0.05 to 0.11).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/matched_vs_mismatched_cost1_cost4/lookahead/matched/mean
+    reported: '0.23'
+    units: rank correlation
+    conditions: look-ahead at cost c against discovery value at cost c, c in {1, 4}; list domain
+    decimals: 2
+- id: mm-x
+  kind: computation
+  passage: 'The look-ahead does so in the list domain: computed at cost 1 and cost 4 and compared with discovery
+    value at the same cost, it correlates at 0.23; compared with discovery value at the other cost, at 0.15, a difference
+    of 0.08 (0.05 to 0.11).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/matched_vs_mismatched_cost1_cost4/lookahead/mismatched/mean
+    reported: '0.15'
+    units: rank correlation
+    conditions: look-ahead at one cost against discovery value at the other
+    decimals: 2
+- id: mm-d
+  kind: computation
+  passage: 'The look-ahead does so in the list domain: computed at cost 1 and cost 4 and compared with discovery
+    value at the same cost, it correlates at 0.23; compared with discovery value at the other cost, at 0.15, a difference
+    of 0.08 (0.05 to 0.11).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/matched_vs_mismatched_cost1_cost4/lookahead/difference/mean
+    reported: '0.08'
+    units: rank correlation
+    conditions: matched minus mismatched, per world
+    decimals: 2
+- id: mm-dlo
+  kind: computation
+  passage: 'The look-ahead does so in the list domain: computed at cost 1 and cost 4 and compared with discovery
+    value at the same cost, it correlates at 0.23; compared with discovery value at the other cost, at 0.15, a difference
+    of 0.08 (0.05 to 0.11).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/matched_vs_mismatched_cost1_cost4/lookahead/difference/lo
+    reported: '0.05'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: mm-dhi
+  kind: computation
+  passage: 'The look-ahead does so in the list domain: computed at cost 1 and cost 4 and compared with discovery
+    value at the same cost, it correlates at 0.23; compared with discovery value at the other cost, at 0.15, a difference
+    of 0.08 (0.05 to 0.11).'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/budget/matched_vs_mismatched_cost1_cost4/lookahead/difference/hi
+    reported: '0.11'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: mm-my
+  kind: computation
+  passage: The frontier statistics show no such advantage in the list domain, and in navigation only frontier yield
+    shows a small one, 0.02 (0.00 to 0.04).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/matched_vs_mismatched_cost1_cost4/yield/difference/mean
+    reported: '0.02'
+    units: rank correlation
+    conditions: frontier yield, matched minus mismatched; navigation
+    decimals: 2
+- id: mm-mylo
+  kind: computation
+  passage: The frontier statistics show no such advantage in the list domain, and in navigation only frontier yield
+    shows a small one, 0.02 (0.00 to 0.04).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/matched_vs_mismatched_cost1_cost4/yield/difference/lo
+    reported: '0.00'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: mm-myhi
+  kind: computation
+  passage: The frontier statistics show no such advantage in the list domain, and in navigation only frontier yield
+    shows a small one, 0.02 (0.00 to 0.04).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/budget/matched_vs_mismatched_cost1_cost4/yield/difference/hi
+    reported: '0.04'
+    units: rank correlation
+    conditions: 95% bootstrap interval over worlds, 4,000 resamples
+    decimals: 2
+- id: z-l
+  kind: computation
+  passage: 'The first, that learned abstractions make later discovery easier, holds only weakly on average: mean
+    discovery value is 0.007 in both domains.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/mean/disc
+    reported: '0.007'
+    units: share of test tasks
+    conditions: mean over 2,400 candidates; list domain, 300 worlds, 8 candidates per world, verification cost 1
+      during discovery
+    decimals: 3
+- id: z-m
+  kind: computation
+  passage: 'The first, that learned abstractions make later discovery easier, holds only weakly on average: mean
+    discovery value is 0.007 in both domains.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/mean/disc
+    reported: '0.007'
+    units: share of test tasks
+    conditions: mean over 2,400 candidates; navigation domain, 300 worlds, 8 candidates per world, verification
+      cost 1 during discovery
+    decimals: 3
+- id: i-lim
+  kind: assumption
+  passage: The learner is deliberately simple.
+  rationale: No observational-equivalence pruning, no learned search policy, greedy compressor with two picks per
+    round.
+- id: i-main
+  kind: interpretation
+  passage: What the results do not support is that fertility can be read from the record an abstraction has when
+    it is adopted.
+  rationale: Section 5.4 predictor agreements against reliability ceilings; Section 5.5 budget dependence.
+- id: i-refute
+  kind: interpretation
+  passage: Several results would change this picture.
+  rationale: States the conditions under which the conclusions would be narrowed.
+- id: i-share
+  kind: interpretation
+  passage: 'The look-ahead''s partial success in the list domain and its failure in navigation also leave open what
+    makes fertility estimable: in the list domain test families share concepts with the curriculum, while in navigation
+    each pair of rooms poses its own route, and estimation from the curriculum depends on such sharing.'
+  rationale: Offered explanation for the difference between domains; not tested directly.
+- id: i-end
+  kind: normative
+  passage: A learner that cares about what it will discover next has to spend computation looking ahead at its own
+    curriculum, and the value it estimates holds only for the budget at which it looked.
+  rationale: Practical recommendation drawn from the predictor and budget results; holds for the learners simulated.
+- id: z-negl
+  kind: computation
+  passage: Among the eight most compressive patterns of each history, the abstractions a compression-based learner
+    would adopt first, early access lowered the later score for 41.8% in the list domain and 38.2% in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lists/1.0/values/share_disc_neg
+    reported: 41.8%
+    units: share of candidates
+    conditions: discovery value < 0; list domain, 300 worlds, 8 candidates per world, verification cost 1 during
+      discovery
+    decimals: 1
+    scale: 100
+- id: z-negm
+  kind: computation
+  passage: Among the eight most compressive patterns of each history, the abstractions a compression-based learner
+    would adopt first, early access lowered the later score for 41.8% in the list domain and 38.2% in navigation.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /maze/1.0/values/share_disc_neg
+    reported: 38.2%
+    units: share of candidates
+    conditions: discovery value < 0; navigation domain, 300 worlds, 8 candidates per world, verification cost 1
+      during discovery
+    decimals: 1
+    scale: 100
+- id: p1-iii
+  kind: interpretation
+  passage: (iii) If no shortest program for $h$ over $L \cup \{a\}$ contains $a$ and $\ell_L(h) \ge 2$, then $C_{L
+    \cup \{a\}}(h) > C_L(h)$, so $h$ leaves the accessible set for every budget in $[C_L(h), C_{L \cup \{a\}}(h))$.
+  rationale: 'Proposition 1(iii) as corrected: proof in Section 3.1; an exhaustive scan of list-domain programs
+    up to length 4 found no violation of the corrected statement (687 cases) and 5 counterexamples to the earlier,
+    weaker hypothesis.'
+- id: p3-ca
+  kind: computation
+  passage: In the history $a$ and $b$ each occur three times without overlap, so their compression savings are $3
+    \cdot 2 - 3 = 3$ and $3 \cdot 3 - 4 = 5$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/reversal/high/a/comp
+    reported: '3'
+    units: tokens
+    conditions: compression saving of a = 012 in the history {01233210, 32101012, 0123210}
+    decimals: 0
+- id: p3-cb
+  kind: computation
+  passage: In the history $a$ and $b$ each occur three times without overlap, so their compression savings are $3
+    \cdot 2 - 3 = 3$ and $3 \cdot 3 - 4 = 5$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/reversal/high/b/comp
+    reported: '5'
+    units: tokens
+    conditions: compression saving of b = 3210 in the same history
+    decimals: 0
+- id: p3-fa
+  kind: computation
+  passage: In the history $a$ and $b$ each occur three times without overlap, so their compression savings are $3
+    \cdot 2 - 3 = 3$ and $3 \cdot 3 - 4 = 5$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/reversal/high/a/freq
+    reported: '3'
+    units: occurrences
+    conditions: non-overlapping occurrences of a in the history
+    decimals: 0
+- id: p3c-a
+  kind: computation
+  passage: In this construction the compression savings are 3 for $a$ and 5 for $b$, which places $b$ first and
+    is wrong at the higher budget.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/reversal/low/a/comp
+    reported: '3'
+    units: tokens
+    conditions: compression saving of a (budget-independent)
+    decimals: 0
+- id: p3c-b
+  kind: computation
+  passage: In this construction the compression savings are 3 for $a$ and 5 for $b$, which places $b$ first and
+    is wrong at the higher budget.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/reversal/low/b/comp
+    reported: '5'
+    units: tokens
+    conditions: compression saving of b (budget-independent)
+    decimals: 0
+- id: p2-ca
+  kind: computation
+  passage: The history is $\{0123, 3210, 012321, 321012\}$, which $\sigma$ maps onto itself; each of $a$ and $a'$
+    occurs three times without overlap, so each has frequency 3 and saving $3 \cdot 2 - 3 = 3$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/separation/a/comp
+    reported: '3'
+    units: tokens
+    conditions: compression saving of a = 012 in the history {0123, 3210, 012321, 321012}
+    decimals: 0
+- id: p2-cb
+  kind: computation
+  passage: The history is $\{0123, 3210, 012321, 321012\}$, which $\sigma$ maps onto itself; each of $a$ and $a'$
+    occurs three times without overlap, so each has frequency 3 and saving $3 \cdot 2 - 3 = 3$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /constructions/separation/a2/comp
+    reported: '3'
+    units: tokens
+    conditions: compression saving of a' = 321
+    decimals: 0
+runs:
+- id: model
+  record: verification/model.json
+  required: true

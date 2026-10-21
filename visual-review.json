@@ -1,0 +1,28 @@
+{
+  "pdf_sha256": "28ef940540404595d7f831695bafec9479e437ccad25be8ac7c3f5e690ee6680",
+  "page_count": 20,
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "all_pages_inspected": true,
+  "notes": "All 20 pages rendered at 80 dpi in four-page sheets and inspected after the rebuild; pages 6-7 and 9-10 (Propositions 1-3) re-inspected at 110 dpi. An overflowing display in the proof of Proposition 3 was split into two lines and re-checked. No missing glyphs. Rebuilt for status published (2026-10-21): all 20 pages rendered at 100 dpi are pixel-identical to the inspected PDF 00d1b20c7a1f; record moved to 28ef94054040."
+}
